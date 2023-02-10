@@ -1,0 +1,121 @@
+@use "./variables" as *;
+
+// ---------------Header styling start here ---------------//
+//Global section styling
+.sectionTest {
+  width: 90%;
+  background-color: $primaryColor;
+  box-shadow: 10px 10px 3px 0px black;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+// Styling h1
+h1 {
+  font-size: 3rem;
+  .name {
+    background-color: $thirdColor;
+    color: white;
+  }
+  .city {
+    color: white;
+    background-color: $secondaryColor;
+    width: 30%;
+  }
+  .job {
+    display: block;
+    background-color: transparent;
+  }
+}
+// Styling picture
+.portrait {
+  border: 2px solid black;
+  border-radius: 20%;
+  box-shadow: 5px 5px 0px 0px $fourthColor;
+}
+// Using flex to display side by side picture and text
+.flexText {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexArticle{
+    display: flex;
+    align-items: center;
+}
+// Using flex to display two links side by side
+.flexLink {
+  display: flex;
+  padding-top: 20px;
+//   Styling link button
+  .link {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: black;
+    transition: 0.75s;
+  }
+  .link2 {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 1s;
+  }
+  .link3 {
+    color: white;
+  }
+  .link:hover,
+  .link:focus {
+    background-color: white;
+    .link3 {
+      color: $fourthColor;
+    }
+  }
+  .link2:hover,
+  .link2:focus {
+    background-color: black;
+    .link4 {
+      color: $fourthColor;
+    }
+  }
+}
+// Styling and anime arrow
+.arrow {
+  width: 90px;
+  padding-bottom: 20px;
+  position: relative;
+  animation: jump 0.9s ease infinite;
+}
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+.sectionTest2 {
+  width: 90%;
+  background-color: $primaryColor;
+  box-shadow: 10px 10px 3px 0px black;
+  border-radius: 35px;
+  margin: 0 auto;
+}
