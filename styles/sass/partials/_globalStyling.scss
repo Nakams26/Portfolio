@@ -12,14 +12,7 @@
 margin: 0;
 padding: 0;
 }
-body {
-    background-color: black;
-    background-image: linear-gradient(to right,  $primaryColor, $fourthColor);
- 
-//     background-image: url(../assets/25335.jpg);
-//   background-position: center;
-//   background-size: cover;
-}
+
 ul{
     list-style: none;
 }
@@ -34,11 +27,9 @@ a{
     font-family: $secondaryFont;
     font-weight: bold;
     color: black;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
-a:hover, a:focus{
-    color: $fourthColor;
-}
+
 section{
     margin-top: 100px;
 }
@@ -46,6 +37,3 @@ p{
     font-family: $secondaryFont;
 }
 
-.material-symbols-outlined:hover, .material-symbols-outlined:focus{
-    color: $fourthColor;
-   }

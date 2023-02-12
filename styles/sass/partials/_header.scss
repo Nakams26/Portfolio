@@ -1,7 +1,16 @@
+// Adding variables for colors and font
 @use "./variables" as *;
 
 // ---------------Header styling start here ---------------//
 //Global section styling
+header {
+  background-image: url(../assets/whiteandblack.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+// Global box styling
 .sectionTest {
   width: 90%;
   background-color: $primaryColor;
@@ -10,11 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 // Styling h1
 h1 {
+  text-align: center;
   font-size: 3rem;
+  margin-top: 0;
   .name {
     background-color: $thirdColor;
     color: white;
@@ -29,67 +40,73 @@ h1 {
     background-color: transparent;
   }
 }
+// Styling text under h1
+.Welcome {
+  font-size: 2rem;
+  font-family: $primaryFont;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 // Styling picture
 .portrait {
-  border: 2px solid black;
-  border-radius: 20%;
-  box-shadow: 5px 5px 0px 0px $fourthColor;
+  width: 40%;
+  position: relative;
+  top: 150px;
+  img {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 6px 0px $fourthColor;
+  }
 }
-// Using flex to display side by side picture and text
-.flexText {
+
+// Using flex to display every element centered
+.flexHeader {
   margin-top: 70px;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
-.flexArticle{
-    display: flex;
-    align-items: center;
+// Using flex to display text and picture side by side
+.flexArticle {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 80px;
 }
 // Using flex to display two links side by side
 .flexLink {
   display: flex;
+  justify-content: center;
   padding-top: 20px;
-//   Styling link button
+  //   Styling link button
   .link {
     padding: 10px;
     border: 2px solid black;
+    box-shadow: 5px 5px 6px 0px $fourthColor;
     border-radius: 10px;
     margin-right: 20px;
-    background-color: black;
-    transition: 0.75s;
+    background-color: white;
   }
-  .link2 {
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-right: 20px;
-    transition: 1s;
-  }
-  .link3 {
-    color: white;
-  }
+  // Styling the button when hover. I used this code from pencode
+
   .link:hover,
   .link:focus {
-    background-color: white;
-    .link3 {
-      color: $fourthColor;
-    }
-  }
-  .link2:hover,
-  .link2:focus {
     background-color: black;
-    .link4 {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+
+    a {
       color: $fourthColor;
     }
   }
 }
+
 // Styling and anime arrow
 .arrow {
   width: 90px;
-  padding-bottom: 20px;
   position: relative;
   animation: jump 0.9s ease infinite;
 }
@@ -103,19 +120,4 @@ h1 {
   100% {
     top: 0;
   }
-}
-
-
-
-
-
-
-
-
-.sectionTest2 {
-  width: 90%;
-  background-color: $primaryColor;
-  box-shadow: 10px 10px 3px 0px black;
-  border-radius: 35px;
-  margin: 0 auto;
 }

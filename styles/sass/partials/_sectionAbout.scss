@@ -1,0 +1,59 @@
+// Adding variables for colors and font
+@use "./variables" as *;
+
+// ---------------Section styling start here ---------------//
+//Global section styling
+.About {
+    background-image: url(../assets/blackandwhite.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+    padding-top: 100px;
+    P{
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-left: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 5px 5px 6px 0px $fourthColor;
+        background-color: white;
+        a{
+            font-size: 1.2rem;
+            font-weight: 400;
+            background-color: $fifthColor;
+        }
+    }
+  }
+
+  //Styling h3
+
+  h2 {
+    margin-top: 50px;
+    font-size: 2.7rem;
+  }
+  h3{
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    span{
+        background-color: $thirdColor;
+    }
+    .skills{
+        background-color: $secondaryColor;
+    }
+  }
+.flexAboutArticle {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.imgAbout{
+    width: 60%;
+    img{
+        
+        border: 2px solid black;
+        border-radius: 50%;
+        box-shadow: -5px -5px 6px 0px $fourthColor;
+    }
+   
+}

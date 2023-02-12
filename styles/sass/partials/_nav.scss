@@ -1,46 +1,60 @@
-
-
+// Adding variables for colors and font
+@use "./variables" as *;
 
 // ---------------Nav styling starts here---------------//
 //Global nav styling
 nav {
-background-color: white;
-   width: 50%;
-   margin-top: 50px;
-   border: 2px solid black;
-   box-shadow: 5px 5px 3px 0px black;
-   border-radius: 15px;
-   transition: 1s;
-// Styling the two links
-   .material-symbols-outlined{
+  background-color: white;
+  width: 50%;
+  margin-top: 50px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 6px 0px black;
+  border-radius: 15px;
+ 
+  // Styling the two links
+  .material-symbols-outlined {
     padding: 3px;
     border: 2px solid black;
     border-radius: 9px;
     margin-left: 5px;
     margin-right: 5px;
-    color: white;
-    background-color: black;
-   }
-//   Using flex to display every menu side by side
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    color: black;
+    background-color: $fourthColor;
+  }
+
+  //   Using flex to display every menu side by side
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    padding: 5%;
+    a:hover,
+    a:focus {
+      color: $fourthColor;
     }
-    li {
-        padding: 10px;
-    }
+  }
 }
 
 //  Using flex to display side by side link and menu
-.flexNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flexNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // Styling the nav hover
-nav:hover, nav:focus {
-    transform: scale(1.5, 1.5);
-    transition: 1s;
+.material-symbols-outlined:hover,
+.material-symbols-outlined:focus {
+  position: relative;
+  animation: rotate 1s ease 1;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
