@@ -1,0 +1,62 @@
+@use "./variables" as *;
+
+// ---------------Contact Section styling start here ---------------//
+
+.Contact {
+  h4 {
+    padding-bottom: 20px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  margin-bottom: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+margin-top: 50px;
+  input,
+  textarea {
+  
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px 0px $fourthColor;
+    border-radius: 10px;
+    background-color: $primaryColor;
+  }
+  button {
+   
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px 0px $fourthColor;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+  button:hover,
+  button:focus {
+    background-color: black;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+    color: $fourthColor;
+  }
+}
+.flexContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+.contactImg{
+    width: 40%;
+}
+    img{
+        border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: -5px -5px 6px 0px $fourthColor;
+    }
+}
+
+// ---------------Contact Section styling start here ---------------//

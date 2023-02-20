@@ -4,23 +4,9 @@
 // ---------------Header styling start here ---------------//
 //Global section styling
 header {
-  background-image: url(../assets/whiteandblack.jpg);
-  background-position: center;
-  background-size: cover;
   padding-top: 70px;
 }
 
-// Global box styling
-.sectionTest {
-  width: 90%;
-  background-color: $primaryColor;
-  box-shadow: 10px 10px 3px 0px black;
-  border-radius: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
 // Styling h1
 h1 {
   text-align: center;
@@ -65,13 +51,13 @@ h1 {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 // Using flex to display text and picture side by side
 .flexArticle {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
 // Using flex to display two links side by side
@@ -79,28 +65,27 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  //   Styling link button
-  .link {
-    padding: 10px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 6px 0px $fourthColor;
-    border-radius: 10px;
-    margin-right: 20px;
-    background-color: white;
-  }
-  // Styling the button when hover. I used this code from pencode
+}
+//   Styling link button
+.link {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 6px 0px $fourthColor;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: white;
+}
+// Styling the button when hover. I used this code from pencode
 
-  .link:hover,
-  .link:focus {
-    background-color: black;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
-      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-
-    a {
-      color: $fourthColor;
-    }
+.link:hover,
+.link:focus {
+  background-color: black;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  a {
+    color: $fourthColor;
   }
 }
 
@@ -115,7 +100,7 @@ h1 {
     top: 0;
   }
   50% {
-    top: 15px;
+    top: 40px;
   }
   100% {
     top: 0;

@@ -232,7 +232,7 @@ html {
 
 .wrapper {
   max-width: 1250px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -247,8 +247,13 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Ubuntu", sans-serif;
+}
+
+h3 {
+  text-align: center;
 }
 
 a {
@@ -263,8 +268,30 @@ section {
   margin-top: 100px;
 }
 
-p {
+p, input, label, textarea {
   font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.sectionTest {
+  width: 95%;
+  background-color: #fbfbf3;
+  -webkit-box-shadow: 10px 10px 3px 0px black;
+          box-shadow: 10px 10px 3px 0px black;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 nav {
@@ -316,6 +343,10 @@ nav li a:focus {
           align-items: center;
 }
 
+.fa-github {
+  cursor: pointer;
+}
+
 .material-symbols-outlined:hover,
 .material-symbols-outlined:focus {
   position: relative;
@@ -345,29 +376,7 @@ nav li a:focus {
   }
 }
 header {
-  background-image: url(../assets/whiteandblack.jpg);
-  background-position: center;
-  background-size: cover;
   padding-top: 70px;
-}
-
-.sectionTest {
-  width: 90%;
-  background-color: #fbfbf3;
-  -webkit-box-shadow: 10px 10px 3px 0px black;
-          box-shadow: 10px 10px 3px 0px black;
-  border-radius: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
 }
 
 h1 {
@@ -417,6 +426,9 @@ h1 .job {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -426,11 +438,9 @@ h1 .job {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
 }
 
@@ -443,7 +453,8 @@ h1 .job {
           justify-content: center;
   padding-top: 20px;
 }
-.flexLink .link {
+
+.link {
   padding: 10px;
   border: 2px solid black;
   -webkit-box-shadow: 5px 5px 6px 0px #fac324;
@@ -452,14 +463,15 @@ h1 .job {
   margin-right: 20px;
   background-color: white;
 }
-.flexLink .link:hover,
-.flexLink .link:focus {
+
+.link:hover,
+.link:focus {
   background-color: black;
   -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.flexLink .link:hover a,
-.flexLink .link:focus a {
+.link:hover a,
+.link:focus a {
   color: #fac324;
 }
 
@@ -475,7 +487,7 @@ h1 .job {
     top: 0;
   }
   50% {
-    top: 15px;
+    top: 40px;
   }
   100% {
     top: 0;
@@ -487,21 +499,17 @@ h1 .job {
     top: 0;
   }
   50% {
-    top: 15px;
+    top: 40px;
   }
   100% {
     top: 0;
   }
 }
 .About {
-  background-image: url(../assets/blackandwhite.jpg);
-  background-position: center;
-  background-size: cover;
   margin-top: 0;
   padding-top: 100px;
 }
-.About P {
-  font-size: 1.2rem;
+.About p {
   padding: 15px;
   margin-left: 20px;
   border: 2px solid black;
@@ -510,7 +518,7 @@ h1 .job {
           box-shadow: 5px 5px 6px 0px #fac324;
   background-color: white;
 }
-.About P a {
+.About p a {
   font-size: 1.2rem;
   font-weight: 400;
   background-color: #85dd45;
@@ -519,6 +527,7 @@ h1 .job {
 h2 {
   margin-top: 50px;
   font-size: 2.7rem;
+  text-align: center;
 }
 
 h3 {
@@ -537,7 +546,6 @@ h3 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 100px;
 }
 
 .imgAbout {
@@ -548,4 +556,156 @@ h3 .skills {
   border-radius: 50%;
   -webkit-box-shadow: -5px -5px 6px 0px #fac324;
           box-shadow: -5px -5px 6px 0px #fac324;
+}
+
+.Projects h2 {
+  text-align: center;
+}
+
+.flexProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flexProjects img {
+  width: 50%;
+  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
+          box-shadow: -5px -5px 6px 0px #fac324;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.flexProjectText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flexProjectText p {
+  padding-left: 80px;
+}
+
+.flexProjectLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projectlink {
+  padding: 10px;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
+          box-shadow: 5px 5px 6px 0px #fac324;
+  border-radius: 10px;
+}
+
+.projectlink:hover,
+.projectlink:focus {
+  background-color: black;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  color: #fac324;
+}
+
+.ulSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.ulSkills li {
+  text-align: center;
+  padding: 10px;
+}
+.ulSkills li p {
+  padding: 50px;
+}
+.ulSkills i {
+  font-size: 4rem;
+}
+
+.Contact {
+  margin-bottom: 100px;
+}
+.Contact h4 {
+  padding-bottom: 20px;
+}
+.Contact p {
+  padding-bottom: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+form input,
+form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
+          box-shadow: 5px 5px 6px 0px #fac324;
+  border-radius: 10px;
+  background-color: #fbfbf3;
+}
+form button {
+  padding: 10px;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
+          box-shadow: 5px 5px 6px 0px #fac324;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+form button:hover,
+form button:focus {
+  background-color: black;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  color: #fac324;
+}
+
+.flexContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.flexContact .contactImg {
+  width: 40%;
+}
+.flexContact img {
+  border: 2px solid black;
+  border-radius: 20px;
+  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
+          box-shadow: -5px -5px 6px 0px #fac324;
+}
+
+footer {
+  text-align: center;
+}
+footer .sectionTest {
+  padding: 10px;
+  margin-bottom: 60px;
 }

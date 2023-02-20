@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+// ---------------Skills Section styling start here ---------------//
+// Display every icons side by side
+.ulSkills{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+     li{
+        text-align: center;
+        padding: 10px;
+       p{
+        padding: 50px;
+       }
+     }
+    i{
+       font-size: 4rem;
+    
+    }
+}
+
+// ---------------Skills Section styling ends here ---------------//

@@ -10,7 +10,7 @@ nav {
   border: 2px solid black;
   box-shadow: 5px 5px 6px 0px black;
   border-radius: 15px;
- 
+
   // Styling the two links
   .material-symbols-outlined {
     padding: 3px;
@@ -45,6 +45,9 @@ nav {
 }
 
 // Styling the nav hover
+.fa-github {
+  cursor: pointer;
+}
 .material-symbols-outlined:hover,
 .material-symbols-outlined:focus {
   position: relative;

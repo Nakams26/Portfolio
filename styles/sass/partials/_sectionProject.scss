@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+// ---------------project Section styling start here ---------------//
+.Projects {
+  h2{
+    text-align: center;
+  }
+}
+// Display iage and article side by side
+.flexProjects {
+  display: flex;
+  img {
+    width: 50%;
+    box-shadow: -5px -5px 6px 0px $fourthColor;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+}
+// Display text + link on top of each other
+.flexProjectText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  p {
+    padding-left: 80px;
+  }
+}
+// Display links side by side
+.flexProjectLink {
+  display: flex;
+  justify-content: space-around;
+}
+// Styling links
+.projectlink {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 6px 0px $fourthColor;
+  border-radius: 10px;
+}
+.projectlink:hover,
+.projectlink:focus {
+  background-color: black;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  color: $fourthColor;
+}
+
+// ---------------project Section styling ends here ---------------//

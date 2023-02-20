@@ -4,7 +4,7 @@
 .wrapper{
    
     max-width: 1250px;
-     width: 90%;
+     width: 95%;
     margin: 0 auto;
 }
 
@@ -18,8 +18,12 @@ ul{
 }
 h1, 
 h2, 
-h3  {
+h3,
+h4  {
     font-family: $primaryFont;
+}
+h3{
+    text-align: center;
 }
 
 a{
@@ -33,7 +37,21 @@ a{
 section{
     margin-top: 100px;
 }
-p{
+p, input, label,textarea{
     font-family: $secondaryFont;
+    font-size: 1.2rem;
 }
 
+// Global box styling
+.sectionTest {
+    width: 95%;
+    background-color: $primaryColor;
+    box-shadow: 10px 10px 3px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
