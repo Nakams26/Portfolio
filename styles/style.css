@@ -398,7 +398,7 @@ h1 .job {
   background-color: transparent;
 }
 
-.Welcome {
+.welcome {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -505,11 +505,11 @@ h1 .job {
     top: 0;
   }
 }
-.About {
+.about {
   margin-top: 0;
   padding-top: 100px;
 }
-.About p {
+.about p {
   padding: 15px;
   margin-left: 20px;
   border: 2px solid black;
@@ -518,7 +518,7 @@ h1 .job {
           box-shadow: 5px 5px 6px 0px #fac324;
   background-color: white;
 }
-.About p a {
+.about p a {
   font-size: 1.2rem;
   font-weight: 400;
   background-color: #85dd45;
@@ -558,24 +558,16 @@ h3 .skills {
           box-shadow: -5px -5px 6px 0px #fac324;
 }
 
-.Projects h2 {
-  text-align: center;
+.projects h2 {
+  padding-bottom: 30px;
 }
-
-.flexProjects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.flexProjects img {
-  width: 50%;
-  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
-          box-shadow: -5px -5px 6px 0px #fac324;
+.projects li {
   border: 2px solid black;
   border-radius: 20px;
+  padding: 10px;
 }
 
-.flexProjectText {
+.flexProjectSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,11 +575,48 @@ h3 .skills {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.flexProjectText p {
-  padding-left: 80px;
+
+.flexProjectUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.flexLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  margin: 20px;
+  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
+          box-shadow: -5px -5px 6px 0px #fac324;
+  background-color: white;
+}
+.flexLi .imgProjectsContainer {
+  padding: 20px;
+}
+.flexLi .imgProjectsContainer img {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.flexLi p {
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .flexProjectLink {
@@ -601,9 +630,8 @@ h3 .skills {
 .projectlink {
   padding: 10px;
   border: 2px solid black;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
   border-radius: 10px;
+  background-color: #fbfbf3;
 }
 
 .projectlink:hover,
@@ -612,6 +640,22 @@ h3 .skills {
   -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
   color: #fac324;
+}
+
+.slideIcons {
+  font-size: 3rem;
+  padding-top: 30px;
+}
+
+.fa-arrow-right-long, .fa-arrow-left-long {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-arrow-left-long:hover, .fa-arrow-left-long:focus, .fa-arrow-right-long:hover, .fa-arrow-right-long:focus {
+  background-color: black;
+  color: #fac324;
+  border-radius: 10px;
 }
 
 .ulSkills {
@@ -634,14 +678,52 @@ h3 .skills {
   font-size: 4rem;
 }
 
-.Contact {
+.contact {
   margin-bottom: 100px;
 }
-.Contact h4 {
+.contact h3 {
+  text-align: left;
+  margin-bottom: 35px;
+  font-size: 3rem;
+}
+.contact h3 span {
+  color: white;
+}
+.contact h4 {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.contact .contactText {
   padding-bottom: 20px;
 }
-.Contact p {
-  padding-bottom: 20px;
+.contact i {
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
+.contact article {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.flexcontactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactInformations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 form {
@@ -653,22 +735,24 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 50px;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
+          box-shadow: 5px 5px 6px 0px #fac324;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: white;
+  width: 45%;
 }
 form input,
 form textarea {
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid black;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
   border-radius: 10px;
-  background-color: #fbfbf3;
 }
 form button {
   padding: 10px;
   border: 2px solid black;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
   border-radius: 10px;
   background-color: white;
   cursor: pointer;
@@ -681,25 +765,32 @@ form button:focus {
   color: #fac324;
 }
 
-.flexContact {
+.contactInfos {
+  border-radius: 10px;
+  background-color: #fbfbf3;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+}
+
+.mail,
+.phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  padding: 10px;
 }
-.flexContact .contactImg {
-  width: 40%;
+
+.fa-phone-flip {
+  color: #85dd45;
 }
-.flexContact img {
-  border: 2px solid black;
-  border-radius: 20px;
-  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
-          box-shadow: -5px -5px 6px 0px #fac324;
+
+.fa-envelope {
+  color: #fac324;
 }
 
 footer {

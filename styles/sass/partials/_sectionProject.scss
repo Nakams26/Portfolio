@@ -1,30 +1,50 @@
 @use "./variables" as *;
 
 // ---------------project Section styling start here ---------------//
-.Projects {
+.projects {
   h2{
-    text-align: center;
+    padding-bottom: 30px;
+  }
+  li{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
   }
 }
-// Display iage and article side by side
-.flexProjects {
+// Display every element on top of each other
+.flexProjectSection{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// Flexing UL to display LI side by side
+.flexProjectUl{
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+// Display image and article on top of eachother
+.flexLi {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1 0 60%;
+   margin: 20px;
+   box-shadow: -5px -5px 6px 0px $fourthColor;
+  background-color: white;
+   .imgProjectsContainer{
+    padding: 20px;
   img {
-    width: 50%;
-    box-shadow: -5px -5px 6px 0px $fourthColor;
     border: 2px solid black;
     border-radius: 20px;
   }
 }
-// Display text + link on top of each other
-.flexProjectText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  p {
-    padding-left: 80px;
+  p{
+    text-align: center;
+    padding-bottom: 30px;
   }
 }
+
 // Display links side by side
 .flexProjectLink {
   display: flex;
@@ -34,8 +54,8 @@
 .projectlink {
   padding: 10px;
   border: 2px solid black;
-  box-shadow: 5px 5px 6px 0px $fourthColor;
   border-radius: 10px;
+  background-color: $primaryColor;
 }
 .projectlink:hover,
 .projectlink:focus {
@@ -47,4 +67,21 @@
   color: $fourthColor;
 }
 
+// Styling slides Icons
+.slideIcons{
+  font-size: 3rem;
+  padding-top: 30px;
+ 
+}
+.fa-arrow-right-long, .fa-arrow-left-long{
+padding: 10px;
+cursor: pointer;
+}
+
+.fa-arrow-left-long:hover, .fa-arrow-left-long:focus, .fa-arrow-right-long:hover, .fa-arrow-right-long:focus{
+  background-color: black;
+  color: $fourthColor;
+  border-radius: 10px;
+
+}
 // ---------------project Section styling ends here ---------------//
