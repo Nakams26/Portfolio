@@ -56,7 +56,8 @@
               <h1>
                 I'm <span class="name">Adrien Polselli</span>,
                 <span class="job">a Web-Developper</span> from
-                <span class="city">Toronto</span>
+                <span class="city">Toronto 🇨🇦</span>
+                <span class="city2">Valence 🇫🇷</span>
               </h1>
               <p class="welcome">Welcome on my portfolio!</p>
               <!-- Adding a div to display 2 links side by side -->
@@ -91,7 +92,6 @@
           <div class="wrapper">
             <h2>Who am I?</h2>
             <!-- Adding a div to use flex to display text and image side by side -->
-
             <h3>
               A <span>team-oriented</span> front-end developper with
               <span class="skills">problem solving</span> skills
@@ -242,7 +242,7 @@
       <section id="skills" class="skills">
         <div class="sectionTest">
           <div class="wrapper">
-            <h3>Evolving Skillset</h3>
+            <h2>Evolving Skillset</h2>
             <ul class="ulSkills">
               <li>
                 <i class="devicon-html5-plain colored"></i>
@@ -291,18 +291,16 @@
       <section id="contact" class="contact">
         <div class="sectionTest">
           <div class="wrapper flexcontactSection">
-            <article  class="contactText">
-            <h3><span>Contact</span>  me!</h3>
-            <h4>Thanks for having a look at my website!</h4>
-            <p class="contactText">
-              Please feel free to send me a message if you have any questions,
-              feedback, recommendations or just if you want to discuss!
-            </p>
-            <p class="contactText">
-              You can use the form or contact me using informations below!
-            </p>
-            <p class="contactText">Thanks</p>
-       
+            <article>
+              <h2><span>Contact</span> me!</h2>
+              <p>Thanks for having a look at my website!</p>
+              <p class="contactText">
+                Please feel free to send me a message if you have any questions,
+                feedback, recommendations or just if you want to discuss!
+              </p>
+              <p class="contactText">
+                You can use the form or contact me using informations below!
+              </p>
               <div class="contactInfos">
                 <div class="mail">
                   <i class="fa-solid fa-envelope"></i>
@@ -314,34 +312,28 @@
                 </div>
               </div>
             </article>
-              <form
-                class="contactForm"
-                action="#"
-                method="POST"
-                name="ContactUs"
+            <form class="contactForm" action="#" method="POST" name="ContactUs">
+              <label class="sr-only" for="Name">Name</label>
+              <input type="text" id="Name" name="Name" placeholder="Name" />
+              <label class="sr-only" for="emailAddress">Email Address</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="Email Address"
+              />
+              <label class="sr-only" for="feedback"
+                >Please provide Feedback</label
               >
-                <label class="sr-only" for="Name">Name</label>
-                <input type="text" id="Name" name="Name" placeholder="Name" />
-                <label class="sr-only" for="emailAddress">Email Address</label>
-                <input
-                  type="email"
-                  id="emailAddress"
-                  name="emailAddress"
-                  placeholder="Email Address"
-                />
-                <label class="sr-only" for="feedback"
-                  >Please provide Feedback</label
-                >
-                <textarea
-                  name="userFeedback"
-                  id="feedback"
-                  placeholder="Please leave your message here"
-                  cols="45"
-                  rows="8"
-                ></textarea>
-                <button type="submit">Submit</button>
-              </form>
-            
+              <textarea
+                name="userFeedback"
+                id="feedback"
+                placeholder="Please leave your message here"
+                cols="45"
+                rows="8"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </section>

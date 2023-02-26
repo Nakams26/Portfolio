@@ -1,6 +1,7 @@
 // Adding variables for colors and font
 @use "./variables" as *;
 
+
 // ---------------Header styling start here ---------------//
 //Global section styling
 header {
@@ -9,9 +10,6 @@ header {
 
 // Styling h1
 h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 0;
   .name {
     background-color: $thirdColor;
     color: white;
@@ -19,11 +17,18 @@ h1 {
   .city {
     color: white;
     background-color: $secondaryColor;
-    width: 30%;
+    animation: hide 8s ease infinite;
+  }
+  .city2{
+    color: white;
+    background-color: $secondaryColor;
+    position: absolute;
+    left: 288px;
+    animation: show 8s ease infinite;
   }
   .job {
     display: block;
-    background-color: transparent;
+
   }
 }
 // Styling text under h1
@@ -95,14 +100,9 @@ h1 {
   position: relative;
   animation: jump 0.9s ease infinite;
 }
-@keyframes jump {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 40px;
-  }
-  100% {
-    top: 0;
-  }
+//Accelerate the arrow when hovering
+.arrow:hover, .arrow:focus{
+  width: 90px;
+  position: relative;
+  animation: jump 0.4s ease infinite;
 }

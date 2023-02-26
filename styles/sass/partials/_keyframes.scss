@@ -1,0 +1,86 @@
+ //---------------------Start of nav animation-----------------//
+  //Rotate animation
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ //---------------------end of nav animation-----------------//
+
+//---------------------Start of header animation-----------------//
+ //Header Hide show animation
+
+ @keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 10;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 10;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+// Jump animation for arrow
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+//---------------------End of header animation-----------------//
+
+
+ //---------------------Start of skills section animation-----------------//
+// shake animation for skills
+@keyframes shake {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+ //---------------------End of skills section animation-----------------//
+
+
+ 
+  
+  

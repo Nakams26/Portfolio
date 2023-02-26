@@ -3,49 +3,63 @@
 // ---------------Contact Section styling start here ---------------//
 // Global section styling
 .contact {
-  h3 {
-    text-align: left;
-    margin-bottom: 35px;
-    font-size: 3rem;
     span {
+      background-color: $thirdColor;
       color: white;
     }
+  article {
+    width: 50%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  h4 {
-    text-align: left;
-    padding-bottom: 10px;
+  p {
+    padding: 10px;
   }
-  .contactText {
-    padding-bottom: 20px;
-  }
-  margin-bottom: 100px;
   i {
     font-size: 1.5rem;
     padding-right: 20px;
   }
-  article {
-    width: 50%;
-    margin-right: 50px;
-  }
 }
+//Using flex to display article and form side by side
 .flexcontactSection {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.contactInformations {
-  display: flex;
-  justify-content: space-between;
+// Styling the contact infos box
+.contactInfos {
+  border-radius: 10px;
+  background-color: $primaryColor;
+  border: 2px solid black;
+  display: inline-block;
+  background-color: white;
+  width: 350px;
+  position: relative;
+  left: 220px;
+  i{
+    padding: 10px;
+  }
+  .mail, .phone{
+    display: flex;
+  }
+  .fa-phone-flip {
+    color: $fifthColor;
+  }
+  .fa-envelope {
+    color: $fourthColor;
+  }
 }
+
+
 // Styling the form
 form {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   border: 2px solid black;
-  box-shadow: 5px 5px 6px 0px $fourthColor;
   border-radius: 10px;
-  padding: 50px;
+  padding: 30px;
   background-color: white;
   width: 45%;
   input,
@@ -72,26 +86,6 @@ form {
     color: $fourthColor;
   }
 }
-// Styling the contact infos box
-.contactInfos {
-  border-radius: 10px;
-  background-color: $primaryColor;
-  border: 2px solid black;
-  display: inline-block;
-  padding: 10px;
-  background-color: white;
-}
-.mail,
-.phone {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-.fa-phone-flip {
-  color: $fifthColor;
-}
-.fa-envelope {
-  color: $fourthColor;
-}
+
 
 // ---------------Contact Section styling start here ---------------//

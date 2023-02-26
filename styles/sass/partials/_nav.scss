@@ -5,7 +5,7 @@
 //Global nav styling
 nav {
   background-color: white;
-  width: 50%;
+  width: 70%;
   margin-top: 50px;
   border: 2px solid black;
   box-shadow: 5px 5px 6px 0px black;
@@ -53,11 +53,5 @@ nav {
   position: relative;
   animation: rotate 1s ease 1;
 }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
+
+// ---------------Nav styling ends here---------------//
