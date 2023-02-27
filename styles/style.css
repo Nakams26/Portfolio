@@ -371,6 +371,9 @@ nav li a:focus {
 header {
   padding-top: 70px;
 }
+header p {
+  text-align: center;
+}
 
 h1 .name {
   background-color: #2f97fc;
