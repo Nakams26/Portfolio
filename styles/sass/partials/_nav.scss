@@ -4,54 +4,26 @@
 // ---------------Nav styling starts here---------------//
 //Global nav styling
 nav {
-  background-color: white;
-  width: 70%;
-  margin-top: 50px;
-  border: 2px solid black;
-  box-shadow: 5px 5px 6px 0px black;
-  border-radius: 15px;
-
-  // Styling the two links
-  .material-symbols-outlined {
-    padding: 3px;
-    border: 2px solid black;
-    border-radius: 9px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: black;
-    background-color: $fourthColor;
-  }
-
+   width: 50%;
+   margin-top: 30px;
   //   Using flex to display every menu side by side
   ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+   
   }
   li {
-    padding: 5%;
+   transition: 0.5s;
     a:hover,
     a:focus {
-      color: $fourthColor;
+      color: $secondaryColor;
+  
     }
+  }
+  li:hover, li:focus{
+    transform: scale(1.5);
   }
 }
 
-//  Using flex to display side by side link and menu
-.flexNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// Styling the nav hover
-.fa-github {
-  cursor: pointer;
-}
-.material-symbols-outlined:hover,
-.material-symbols-outlined:focus {
-  position: relative;
-  animation: rotate 1s ease 1;
-}
 
 // ---------------Nav styling ends here---------------//

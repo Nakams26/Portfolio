@@ -41,13 +41,13 @@
 
 @keyframes jump {
   0% {
-    top: 0;
+    top: -20px;
   }
   50% {
-    top: 40px;
+    top: 0px;
   }
   100% {
-    top: 0;
+    top: -20px;
   }
 }
 //---------------------End of header animation-----------------//

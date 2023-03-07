@@ -1,111 +1,66 @@
 // Adding variables for colors and font
 @use "./variables" as *;
 
-
 // ---------------Header styling start here ---------------//
 //Global section styling
-header {
-  padding-top: 70px;
-  p{
-    text-align: center;
-  }
+header{
+  background-image: url(../assets/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-
-// Styling h1
-h1 {
-  .name {
-    background-color: $thirdColor;
-    color: white;
-  }
-  .city {
-    color: white;
-    background-color: $secondaryColor;
-    animation: hide 8s ease infinite;
-  }
-  .city2{
-    color: white;
-    background-color: $secondaryColor;
-    position: absolute;
-    left: 288px;
-    animation: show 8s ease infinite;
-  }
-  .job {
-    display: block;
-
-  }
-}
-// Styling text under h1
-.welcome {
-  font-size: 2rem;
-  font-family: $primaryFont;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-// Styling picture
-.portrait {
-  width: 40%;
-  position: relative;
-  top: 150px;
-  img {
-    border: 2px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 6px 0px $fourthColor;
-  }
-}
-
-// Using flex to display every element centered
 .flexHeader {
-  margin-top: 70px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-// Using flex to display text and picture side by side
-.flexArticle {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-}
-// Using flex to display two links side by side
-.flexLink {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-//   Styling link button
-.link {
-  padding: 10px;
-  border: 2px solid black;
-  box-shadow: 5px 5px 6px 0px $fourthColor;
-  border-radius: 10px;
-  margin-right: 20px;
-  background-color: white;
-}
-// Styling the button when hover. I used this code from pencode
-
-.link:hover,
-.link:focus {
-  background-color: black;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  a {
-    color: $fourthColor;
+  h1 {
+    margin-top: 160px;
+    color: white;
+  }
+  p {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+  }
+  // Animation for 2 cities
+  .cityCanada {
+    animation: hide 8s infinite;
+  }
+  .cityFrance {
+    position: absolute;
+    left: 420px;
+    bottom: 0;
+    animation: show 8s infinite;
   }
 }
 
+//   Styling link button
+.link {
+  padding: 10px;
+  display: flex;
+align-items: center;
+  background-color: $secondaryColor;
+  border-radius: 10px;
+  transition: 0.7s;
+  a{
+    color: black;
+  }
+}
+
+.link:hover, .link:focus{
+  background-color: white;
+  transform: scale(1.3);
+}
+// Styling the button when hover. I used this code from pencode
+
 // Styling and anime arrow
-.arrow {
-  width: 90px;
+.arrow { i{
+  font-size: 2rem;
+}
   position: relative;
   animation: jump 0.9s ease infinite;
 }
-//Accelerate the arrow when hovering
-.arrow:hover, .arrow:focus{
-  width: 90px;
-  position: relative;
-  animation: jump 0.4s ease infinite;
-}
+
+

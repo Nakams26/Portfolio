@@ -12,11 +12,6 @@ article, aside, footer, header, nav, section {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 figcaption, figure, main {
   display: block;
 }
@@ -232,7 +227,7 @@ html {
 
 .wrapper {
   max-width: 1250px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -249,175 +244,71 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 0;
+  font-size: 4rem;
 }
 
 h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
   font-size: 2.7rem;
-  text-align: center;
 }
 
 h3 {
   font-size: 1.8rem;
-  margin-bottom: 50px;
 }
 
 a {
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   font-size: 0.9rem;
 }
 
-section {
-  margin-top: 100px;
-}
-
-p, input, label, textarea {
-  font-family: "Nunito Sans", sans-serif;
+p,
+input,
+label,
+textarea {
+  font-family: "Lora", serif;
   font-size: 1.2rem;
 }
 
-.sectionTest {
-  width: 95%;
-  background-color: #fbfbf3;
-  -webkit-box-shadow: 10px 10px 3px 0px black;
-          box-shadow: 10px 10px 3px 0px black;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 80px;
-}
-
 nav {
-  background-color: white;
-  width: 70%;
-  margin-top: 50px;
-  border: 2px solid black;
-  -webkit-box-shadow: 5px 5px 6px 0px black;
-          box-shadow: 5px 5px 6px 0px black;
-  border-radius: 15px;
-}
-nav .material-symbols-outlined {
-  padding: 3px;
-  border: 2px solid black;
-  border-radius: 9px;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: black;
-  background-color: #fac324;
+  width: 50%;
+  margin-top: 30px;
 }
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav li {
-  padding: 5%;
-}
-nav li a:hover,
-nav li a:focus {
-  color: #fac324;
-}
-
-.flexNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
-.fa-github {
-  cursor: pointer;
+nav li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
-.material-symbols-outlined:hover,
-.material-symbols-outlined:focus {
-  position: relative;
-  -webkit-animation: rotate 1s ease 1;
-          animation: rotate 1s ease 1;
+nav li a:hover,
+nav li a:focus {
+  color: #D7B377;
+}
+nav li:hover, nav li:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 header {
-  padding-top: 70px;
-}
-header p {
-  text-align: center;
-}
-
-h1 .name {
-  background-color: #2f97fc;
-  color: white;
-}
-h1 .city {
-  color: white;
-  background-color: #f54a60;
-  -webkit-animation: hide 8s ease infinite;
-          animation: hide 8s ease infinite;
-}
-h1 .city2 {
-  color: white;
-  background-color: #f54a60;
-  position: absolute;
-  left: 288px;
-  -webkit-animation: show 8s ease infinite;
-          animation: show 8s ease infinite;
-}
-h1 .job {
-  display: block;
-}
-
-.welcome {
-  font-size: 2rem;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.portrait {
-  width: 40%;
-  position: relative;
-  top: 150px;
-}
-.portrait img {
-  border: 2px solid black;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
+  background-image: url(../assets/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .flexHeader {
-  margin-top: 70px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,60 +323,57 @@ h1 .job {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.flexArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 80px;
+.flexHeader h1 {
+  margin-top: 160px;
+  color: white;
 }
-
-.flexLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 20px;
+.flexHeader p {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+.flexHeader .cityCanada {
+  -webkit-animation: hide 8s infinite;
+          animation: hide 8s infinite;
+}
+.flexHeader .cityFrance {
+  position: absolute;
+  left: 420px;
+  bottom: 0;
+  -webkit-animation: show 8s infinite;
+          animation: show 8s infinite;
 }
 
 .link {
   padding: 10px;
-  border: 2px solid black;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D7B377;
   border-radius: 10px;
-  margin-right: 20px;
-  background-color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.link a {
+  color: black;
 }
 
-.link:hover,
-.link:focus {
-  background-color: black;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-}
-.link:hover a,
-.link:focus a {
-  color: #fac324;
+.link:hover, .link:focus {
+  background-color: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .arrow {
-  width: 90px;
   position: relative;
   -webkit-animation: jump 0.9s ease infinite;
           animation: jump 0.9s ease infinite;
 }
-
-.arrow:hover, .arrow:focus {
-  width: 90px;
-  position: relative;
-  -webkit-animation: jump 0.4s ease infinite;
-          animation: jump 0.4s ease infinite;
+.arrow i {
+  font-size: 2rem;
 }
 
 .about {
@@ -497,21 +385,21 @@ h1 .job {
   margin-left: 20px;
   border: 2px solid black;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 6px 0px #fac324;
-          box-shadow: 5px 5px 6px 0px #fac324;
+  -webkit-box-shadow: 5px 5px 6px 0px #385F71;
+          box-shadow: 5px 5px 6px 0px #385F71;
   background-color: white;
 }
 .about p a {
   font-size: 1.2rem;
   font-weight: 400;
-  background-color: #85dd45;
+  background-color: #2B4162;
 }
 
 h3 span {
-  background-color: #2f97fc;
+  background-color: #8F754F;
 }
 h3 .skills {
-  background-color: #f54a60;
+  background-color: #D7B377;
 }
 
 .flexAboutArticle {
@@ -526,8 +414,8 @@ h3 .skills {
 .imgAbout img {
   border: 2px solid black;
   border-radius: 50%;
-  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
-          box-shadow: -5px -5px 6px 0px #fac324;
+  -webkit-box-shadow: -5px -5px 6px 0px #385F71;
+          box-shadow: -5px -5px 6px 0px #385F71;
 }
 
 .projects li {
@@ -572,8 +460,8 @@ h3 .skills {
       -ms-flex: 1 0 60%;
           flex: 1 0 60%;
   margin: 20px;
-  -webkit-box-shadow: -5px -5px 6px 0px #fac324;
-          box-shadow: -5px -5px 6px 0px #fac324;
+  -webkit-box-shadow: -5px -5px 6px 0px #385F71;
+          box-shadow: -5px -5px 6px 0px #385F71;
   background-color: white;
 }
 .flexLi .imgProjectsContainer {
@@ -600,7 +488,7 @@ h3 .skills {
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: #fbfbf3;
+  background-color: #F5F0F6;
 }
 
 .projectlink:hover,
@@ -608,7 +496,7 @@ h3 .skills {
   background-color: black;
   -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  color: #fac324;
+  color: #385F71;
 }
 
 .slideIcons {
@@ -623,7 +511,7 @@ h3 .skills {
 
 .fa-arrow-left-long:hover, .fa-arrow-left-long:focus, .fa-arrow-right-long:hover, .fa-arrow-right-long:focus {
   background-color: black;
-  color: #fac324;
+  color: #385F71;
   border-radius: 10px;
 }
 
@@ -652,7 +540,7 @@ h3 .skills {
 }
 
 .contact span {
-  background-color: #2f97fc;
+  background-color: #8F754F;
   color: white;
 }
 .contact article {
@@ -677,7 +565,7 @@ h3 .skills {
   padding-right: 20px;
 }
 
-.flexcontactSection {
+.flexContactSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,7 +576,7 @@ h3 .skills {
 
 .contactInfos {
   border-radius: 10px;
-  background-color: #fbfbf3;
+  background-color: #F5F0F6;
   border: 2px solid black;
   display: inline-block;
   background-color: white;
@@ -705,10 +593,10 @@ h3 .skills {
   display: flex;
 }
 .contactInfos .fa-phone-flip {
-  color: #85dd45;
+  color: #2B4162;
 }
 .contactInfos .fa-envelope {
-  color: #fac324;
+  color: #385F71;
 }
 
 form {
@@ -745,7 +633,7 @@ form button:focus {
   background-color: black;
   -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  color: #fac324;
+  color: #385F71;
 }
 
 footer {
@@ -824,24 +712,24 @@ footer .sectionTest {
 }
 @-webkit-keyframes jump {
   0% {
-    top: 0;
+    top: -20px;
   }
   50% {
-    top: 40px;
+    top: 0px;
   }
   100% {
-    top: 0;
+    top: -20px;
   }
 }
 @keyframes jump {
   0% {
-    top: 0;
+    top: -20px;
   }
   50% {
-    top: 40px;
+    top: 0px;
   }
   100% {
-    top: 0;
+    top: -20px;
   }
 }
 @-webkit-keyframes shake {

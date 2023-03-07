@@ -1,68 +1,48 @@
-// Adding vuse of variables
+// Adding use of variables
 @use "./variables" as *;
 
-.wrapper{
-   
-    max-width: 1250px;
-     width: 95%;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-* { 
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-h1, 
-h2, 
+h1,
+h2,
 h3,
-h4  {
-    font-family: $primaryFont;
+h4 {
+  font-family: $primaryFont;
 }
-h1{
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 0;
+h1 {
+  font-size: 4rem;
 }
 h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 2.7rem;
-    text-align: center;
+  font-size: 2.7rem;
 }
-h3{
-    font-size: 1.8rem;
-  margin-bottom: 50px;
+h3 {
+  font-size: 1.8rem;
 }
-a{
-    text-decoration: none;
-    font-family: $secondaryFont;
-    font-weight: bold;
-    color: black;
-    font-size: 0.9rem;
+a {
+  text-decoration: none;
+  font-family: $primaryFont;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
 }
 
-section{
-    margin-top: 100px;
-}
-p, input, label,textarea{
-    font-family: $secondaryFont;
-    font-size: 1.2rem;
-}
 
-// Global box styling
-.sectionTest {
-    width: 95%;
-    background-color: $primaryColor;
-    box-shadow: 10px 10px 3px 0px black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 80px;
-  }
+p,
+input,
+label,
+textarea {
+  font-family: $secondaryFont;
+  font-size: 1.2rem;
+}
