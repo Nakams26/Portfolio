@@ -291,6 +291,9 @@ nav li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+nav li a {
+  color: black;
+}
 nav li a:hover,
 nav li a:focus {
   color: #D7B377;
@@ -301,7 +304,7 @@ nav li:hover, nav li:focus {
 }
 
 header {
-  background-image: url(../assets/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+  background-image: url(../assets/imattsmart-kigHD-rVJzA-unsplash.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -325,11 +328,11 @@ header {
 }
 .flexHeader h1 {
   margin-top: 160px;
-  color: white;
+  color: black;
 }
 .flexHeader p {
   position: relative;
-  color: white;
+  color: black;
   font-size: 2rem;
 }
 .flexHeader .cityCanada {
@@ -374,6 +377,7 @@ header {
 }
 .arrow i {
   font-size: 2rem;
+  color: black;
 }
 
 .about {

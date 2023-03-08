@@ -4,7 +4,7 @@
 // ---------------Header styling start here ---------------//
 //Global section styling
 header{
-  background-image: url(../assets/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+  background-image: url(../assets/imattsmart-kigHD-rVJzA-unsplash.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -17,11 +17,11 @@ header{
   align-items: center;
   h1 {
     margin-top: 160px;
-    color: white;
+    color: black;
   }
   p {
     position: relative;
-    color: white;
+    color: black;
     font-size: 2rem;
   }
   // Animation for 2 cities
@@ -58,6 +58,7 @@ align-items: center;
 // Styling and anime arrow
 .arrow { i{
   font-size: 2rem;
+  color: black;
 }
   position: relative;
   animation: jump 0.9s ease infinite;

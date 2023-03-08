@@ -14,6 +14,9 @@ nav {
   }
   li {
    transition: 0.5s;
+   a{
+    color: black;
+   }
     a:hover,
     a:focus {
       color: $secondaryColor;
