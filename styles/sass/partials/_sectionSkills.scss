@@ -2,6 +2,13 @@
 
 
 // ---------------Skills Section styling start here ---------------//
+.skills{
+  background-color: $fifthColor;
+  h2{
+    color: white;
+
+  }
+}
 // Display every icons side by side
 .ulSkills{
   display: flex;
@@ -9,13 +16,16 @@
 justify-content: space-around;
      li{
         text-align: center;
-        padding: 10px;
+        i{
+          color: white;
+        }
        p{
         padding: 50px;
+        color: white;
        }
      }
     i{
-       font-size: 4rem;
+       font-size: 3rem;
       
     }
     li:hover, li:focus{

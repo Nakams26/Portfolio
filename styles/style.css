@@ -253,6 +253,8 @@ h1 {
 
 h2 {
   font-size: 2.7rem;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 h3 {
@@ -275,6 +277,10 @@ textarea {
   font-size: 1.2rem;
 }
 
+section {
+  padding: 100px 0;
+}
+
 nav {
   width: 50%;
   margin-top: 30px;
@@ -293,10 +299,11 @@ nav li {
 }
 nav li a {
   color: black;
+  font-size: 1.2rem;
 }
 nav li a:hover,
 nav li a:focus {
-  color: #D7B377;
+  color: #385F71;
 }
 nav li:hover, nav li:focus {
   -webkit-transform: scale(1.5);
@@ -355,19 +362,25 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #D7B377;
+  background-color: #385F71;
   border-radius: 10px;
+  border: 3px solid black;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .link a {
-  color: black;
+  color: white;
 }
 
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   background-color: white;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+.link:hover a,
+.link:focus a {
+  color: black;
 }
 
 .arrow {
@@ -380,55 +393,7 @@ header {
   color: black;
 }
 
-.about {
-  margin-top: 0;
-  padding-top: 100px;
-}
-.about p {
-  padding: 15px;
-  margin-left: 20px;
-  border: 2px solid black;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 6px 0px #385F71;
-          box-shadow: 5px 5px 6px 0px #385F71;
-  background-color: white;
-}
-.about p a {
-  font-size: 1.2rem;
-  font-weight: 400;
-  background-color: #2B4162;
-}
-
-h3 span {
-  background-color: #8F754F;
-}
-h3 .skills {
-  background-color: #D7B377;
-}
-
-.flexAboutArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.imgAbout {
-  width: 60%;
-}
-.imgAbout img {
-  border: 2px solid black;
-  border-radius: 50%;
-  -webkit-box-shadow: -5px -5px 6px 0px #385F71;
-          box-shadow: -5px -5px 6px 0px #385F71;
-}
-
-.projects li {
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.flexProjectSection {
+.flexAbout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,13 +405,57 @@ h3 .skills {
       -ms-flex-align: center;
           align-items: center;
 }
+.flexAbout h2 {
+  padding-bottom: 30px;
+}
+.flexAbout p {
+  padding: 15px;
+  text-align: center;
+}
+.flexAbout p span {
+  background-color: #0FA3B1;
+}
+.flexAbout p a {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #0FA3B1;
+}
+.flexAbout p a:hover, .flexAbout p a:focus {
+  text-decoration: underline;
+  color: black;
+}
 
-.flexProjectUl {
+h3 {
+  margin-bottom: 20px;
+}
+h3 span {
+  color: white;
+  background-color: #0FA3B1;
+}
+
+.imgAbout {
+  width: 20%;
+  margin-bottom: 20px;
+}
+.imgAbout img {
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.projects {
+  background-color: #F8F7FF;
+}
+.projects h2 {
+  padding-bottom: 30px;
+}
+.projects .flexProjectUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
-  scroll-behavior: smooth;
+}
+.projects li {
+  margin: 30px;
+  background-color: white;
 }
 
 .flexLi {
@@ -460,24 +469,12 @@ h3 .skills {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 60%;
-          flex: 1 0 60%;
-  margin: 20px;
-  -webkit-box-shadow: -5px -5px 6px 0px #385F71;
-          box-shadow: -5px -5px 6px 0px #385F71;
-  background-color: white;
 }
-.flexLi .imgProjectsContainer {
-  padding: 20px;
-}
-.flexLi .imgProjectsContainer img {
-  border: 2px solid black;
-  border-radius: 20px;
+.flexLi h3 {
+  margin-top: 50px;
 }
 .flexLi p {
-  text-align: center;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .flexProjectLink {
@@ -488,35 +485,38 @@ h3 .skills {
       justify-content: space-around;
 }
 
-.projectlink {
+.projectLink {
+  margin: 20px;
   padding: 10px;
-  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #385F71;
   border-radius: 10px;
-  background-color: #F5F0F6;
+  border: 3px solid black;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.projectLink a {
+  color: white;
 }
 
-.projectlink:hover,
-.projectlink:focus {
-  background-color: black;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  color: #385F71;
+.projectLink:hover,
+.projectLink:focus {
+  background-color: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: black;
 }
 
-.slideIcons {
-  font-size: 3rem;
-  padding-top: 30px;
+.skills {
+  background-color: #2B4162;
 }
-
-.fa-arrow-right-long, .fa-arrow-left-long {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.fa-arrow-left-long:hover, .fa-arrow-left-long:focus, .fa-arrow-right-long:hover, .fa-arrow-right-long:focus {
-  background-color: black;
-  color: #385F71;
-  border-radius: 10px;
+.skills h2 {
+  color: white;
 }
 
 .ulSkills {
@@ -530,26 +530,27 @@ h3 .skills {
 }
 .ulSkills li {
   text-align: center;
-  padding: 10px;
+}
+.ulSkills li i {
+  color: white;
 }
 .ulSkills li p {
   padding: 50px;
+  color: white;
 }
 .ulSkills i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .ulSkills li:hover, .ulSkills li:focus {
   -webkit-animation: shake 1s ease infinite;
           animation: shake 1s ease infinite;
 }
 
-.contact span {
-  background-color: #8F754F;
-  color: white;
+.contact {
+  background-color: #324A5F;
 }
-.contact article {
-  width: 50%;
-  margin-right: 50px;
+
+.flexContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,50 +558,37 @@ h3 .skills {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.contact p {
+.flexContact h2 {
+  padding-bottom: 30px;
+  color: white;
+}
+.flexContact p {
   padding: 10px;
+  text-align: center;
+  color: white;
 }
-.contact i {
+.flexContact i {
   font-size: 1.5rem;
   padding-right: 20px;
 }
 
-.flexContactSection {
+.contactInfos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contactInfos {
-  border-radius: 10px;
-  background-color: #F5F0F6;
-  border: 2px solid black;
-  display: inline-block;
-  background-color: white;
-  width: 350px;
-  position: relative;
-  left: 220px;
 }
 .contactInfos i {
   padding: 10px;
 }
-.contactInfos .mail, .contactInfos .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .contactInfos .fa-phone-flip {
-  color: #2B4162;
+  color: white;
 }
 .contactInfos .fa-envelope {
-  color: #385F71;
+  color: white;
 }
 
 form {
@@ -612,11 +600,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 50px;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 30px;
-  background-color: white;
-  width: 45%;
+  background-color: secondaryColor;
 }
 form input,
 form textarea {
@@ -626,18 +610,22 @@ form textarea {
   border-radius: 10px;
 }
 form button {
+  text-align: center;
   padding: 10px;
-  border: 2px solid black;
+  background-color: #385F71;
   border-radius: 10px;
-  background-color: white;
+  border: 3px solid black;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   cursor: pointer;
 }
 form button:hover,
 form button:focus {
-  background-color: black;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  color: #385F71;
+  background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: black;
 }
 
 footer {

@@ -6,20 +6,20 @@
 nav {
    width: 50%;
    margin-top: 30px;
-  //   Using flex to display every menu side by side
+  //   Using flex to display every menu side by side and center them
   ul {
     display: flex;
     justify-content: space-between;
-   
   }
   li {
    transition: 0.5s;
    a{
     color: black;
+    font-size: 1.2rem;
    }
     a:hover,
     a:focus {
-      color: $secondaryColor;
+      color: $fourthColor;
   
     }
   }

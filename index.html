@@ -23,10 +23,11 @@
   </head>
   <body>
     <!-- <p>🚧 THIS SITE IS UNDER CONSTRUCTION 🚧</p> -->
+    <!-- Start of header -->
     <header>
       <div class="wrapper flexHeader">
+        <!-- Start of nav -->
         <nav>
-          <!-- Adding a class to flex every element of the nav -->
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -35,193 +36,87 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <!-- End of nav -->
         <h1>Adrien Polselli</h1>
-        <p>Web Developper from <span class="cityCanada">Toronto 🇨🇦 </span> <span class="cityFrance">Valence 🇫🇷</span>  </p>
-        <p class="link">
-          <a href="#contact"> Get in Touch </a>
+        <p>
+          Web Developper from <span class="cityCanada">Toronto 🇨🇦 </span>
+          <span class="cityFrance">Valence 🇫🇷</span>
         </p>
         <p class="link">
-          <a href="#projects">View project</a>
+          <a href="#contact">Get in Touch</a>
+        </p>
+        <p class="link">
+          <a href="./frenchVersion.html">Version Française</a>
         </p>
         <div class="arrow">
-          
-            <a href="#about"
-              ><i class="fa-solid fa-angle-down"></i></a>
+          <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
         </div>
       </div>
     </header>
-
+    <!-- End of header -->
+    <!-- Start of main -->
     <main>
+      <!-- Start of first section: About me -->
       <section id="about" class="about">
-        <div class="wrapper">
+        <div class="wrapper flexAbout">
+          <div class="imgAbout">
+            <img
+              src="./assets/1598353990692.jpg"
+              alt="A portrait of Adrien Polselli"
+            />
+          </div>
           <h2>Who am I?</h2>
           <h3>
             A <span>team-oriented</span> front-end developper with
             <span class="skills">problem solving</span> skills
           </h3>
-          <!-- Adding a div to use flex to display text and image side by side -->
-          <div class="flexAboutArticle">
-            <div class="imgAbout">
-              <img
-                src="./assets/1598353990692.jpg"
-                alt="A portrait of Adrien Polselli"
-              />
-            </div>
-            <div class="aboutText">
-              <p>
-                I'm Adrien, a Web-Developper with a backgound in technical
-                support, both as agent and manager. After 10 years working in
-                collaboration with devs team, learning different code languages
-                and software, I decided in 2022 that coding would be the next
-                step in my career.
-                <br />
-                <br />
-                After my graduation in the
-                <a
-                  href="https://junocollege.com/bootcamp/web-development-toronto/"
-                  >JUNO College web-developpment bootcamp</a
-                >, I developped a passion to bring to life responsive and
-                accessible projects. Creating clean code, nice looking website
-                matters to me. I pay close attention to details and I love to
-                solve problems!
-                <br />
-                <br />
-                Other than computers, I'm really into sports and specially team
-                sports. I love to be involved in soccer and basketball games!
-                I'm also of big fan of travels, road trip and camping. Life is a
-                new discovery every day is my motto!
-              </p>
-            </div>
-          </div>
+          <p>
+            I'm Adrien, a Web-Developper with a backgound in
+            <span>technical support</span>, both as agent and manager. After 10
+            years working in collaboration with devs team, learning different
+            code languages and software, I decided in 2022 that coding would be
+            the next step in my career.
+          </p>
+          <p>
+            After my graduation in the
+            <a href="https://junocollege.com/bootcamp/web-development-toronto/"
+              >JUNO College web-developpment bootcamp</a
+            >, I developped a passion to bring to life
+            <span>responsive</span> and <span>accessible</span> projects.
+            Creating clean code, nice looking website matters to me. I pay close
+            attention to details and I love to solve problems!
+          </p>
+          <p>
+            Other than computers, I'm really into sports and specially team
+            sports. I love to be involved in soccer and basketball games! I'm
+            also of big fan of travels, road trip and camping.
+          </p>
         </div>
       </section>
-
-      <section id="projects" class="projects">
-        <div class="wrapper flexProjectSection">
-          <h2>Recents projects</h2>
-          <ul class="ulProject flexProjectUl">
-            <li class="flexLi">
-              <div class="imgProjectsContainer">
-                <img
-                  src="assets/Plantedinvitation.png"
-                  alt="A preview of the planted project"
-                />
-              </div>
-              <h3>Project 1: Planted</h3>
-              <div class="flexProjectText">
-                <p>
-                  The Planted project is my first ever project. It's a multi
-                  page responsive and accessible website around the plant
-                  universe. Technologies used here are HTML, CSS, SCSS and
-                  JavaScript.
-                </p>
-                <div class="flexProjectLink">
-                  <a
-                    href="https://github.com/Nakams26/Project-1"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    GitHub REPO</a
-                  >
-                  <a
-                    href="https://devadrienprojectone.netlify.app/"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    Live website</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="flexLi">
-              <div class="imgProjectsContainer">
-                <img
-                  src="assets/Plantedinvitation.png"
-                  alt="A preview of the planted project"
-                />
-              </div>
-              <h3>Project 2: Planted</h3>
-              <div class="flexProjectText">
-                <p>
-                  The Planted project is my first ever project. It's a multi
-                  page responsive and accessible website around the plant
-                  universe. Technologies used here are HTML, CSS, SCSS and
-                  JavaScript.
-                </p>
-                <div class="flexProjectLink">
-                  <a
-                    href="https://github.com/Nakams26/Project-1"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    GitHub REPO</a
-                  >
-                  <a
-                    href="https://devadrienprojectone.netlify.app/"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    Live website</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="flexLi">
-              <div class="imgProjectsContainer">
-                <img
-                  src="assets/Plantedinvitation.png"
-                  alt="A preview of the planted project"
-                />
-              </div>
-              <h3>Project 3: Planted</h3>
-              <div class="flexProjectText">
-                <p>
-                  The Planted project is my first ever project. It's a multi
-                  page responsive and accessible website around the plant
-                  universe. Technologies used here are HTML, CSS, SCSS and
-                  JavaScript.
-                </p>
-                <div class="flexProjectLink">
-                  <a
-                    href="https://github.com/Nakams26/Project-1"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    GitHub REPO</a
-                  >
-                  <a
-                    href="https://devadrienprojectone.netlify.app/"
-                    class="fa-brands fa-github projectlink"
-                  >
-                    Live website</a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="slideIcons">
-            <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
-            <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
-          </div>
-        </div>
-      </section>
+      <!-- End of abut me section -->
+      <!-- Start of skills section -->
       <section id="skills" class="skills">
         <div class="wrapper">
           <h2>Evolving Skillset</h2>
           <ul class="ulSkills">
             <li>
-              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-html5-plain"></i>
               <p>HTML</p>
             </li>
             <li>
-              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-css3-plain"></i>
               <p>CSS</p>
             </li>
             <li>
-              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-sass-original"></i>
               <p>SSCC</p>
             </li>
             <li>
-              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-javascript-plain"></i>
               <p>JavaScript</p>
             </li>
             <li>
-              <i class="devicon-jquery-plain colored"></i>
+              <i class="devicon-jquery-plain"></i>
               <p>jQuery</p>
             </li>
             <li>
@@ -229,43 +124,193 @@
               <p>restApi</p>
             </li>
             <li>
-              <i class="devicon-react-original colored"></i>
+              <i class="fa-sharp fa-solid fa-universal-access"></i>
+              <p>Accessibility</p>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
               <p>react</p>
             </li>
             <li>
-              <i class="devicon-firebase-plain colored"></i>
+              <i class="devicon-firebase-plain"></i>
               <p>Firebase</p>
             </li>
             <li>
-              <i class="devicon-git-plain colored"></i>
+              <i class="devicon-git-plain"></i>
               <p>Git</p>
+            </li>
+            <li>
+              <i class="devicon-github-original"></i>
+              <p>GitHub</p>
             </li>
           </ul>
         </div>
       </section>
-      <section id="contact" class="contact">
-        <div class="wrapper flexContactSection">
-          <article>
-            <h2><span>Contact</span> me!</h2>
-            <p>Thanks for having a look at my website!</p>
-            <p class="contactText">
-              Please feel free to send me a message if you have any questions,
-              feedback, recommendations or just if you want to discuss!
-            </p>
-            <p class="contactText">
-              You can use the form or contact me using informations below!
-            </p>
-            <div class="contactInfos">
-              <div class="mail">
-                <i class="fa-solid fa-envelope"></i>
-                <p>polselliadrien@gmail.com</p>
-              </div>
-              <div class="phone">
-                <i class="fa-solid fa-phone-flip"></i>
-                <p>+1 (647) 495 2877</p>
-              </div>
+      <!-- End of skills section -->
+      <!-- Start of project section -->
+      <section id="projects" class="projects">
+        <div class="wrapper">
+          <h2>Recents projects</h2>
+          <ul class="flexProjectUl">
+            <!-- Adding a div for the first row -->
+            <div class="firstRow">
+              <li class="flexLi">
+                <div class="imgProjectsContainer">
+                  <img
+                    src="assets/Plantedinvitation.png"
+                    alt="A preview of the planted project"
+                  />
+                </div>
+                <h3>Project 1: Planted</h3>
+                <div class="flexProjectText">
+                  <p>
+                    The Planted project is my first ever project. It's a multi
+                    page responsive and accessible website around the plant
+                    universe. Technologies used here are HTML, CSS, SCSS and
+                    JavaScript.
+                  </p>
+                  <div class="flexProjectLink">
+                    <a
+                      href="https://github.com/Nakams26/Project-1"
+                      class="projectLink"
+                    >
+                      GitHub Repo</a
+                    >
+                    <a
+                      href="https://devadrienprojectone.netlify.app/"
+                      class="projectLink"
+                    >
+                      Live website</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="flexLi">
+                <div class="imgProjectsContainer">
+                  <img
+                    src="assets/Plantedinvitation.png"
+                    alt="A preview of the planted project"
+                  />
+                </div>
+                <h3>Project 2: Planted</h3>
+                <div class="flexProjectText">
+                  <p>
+                    The Planted project is my first ever project. It's a multi
+                    page responsive and accessible website around the plant
+                    universe. Technologies used here are HTML, CSS, SCSS and
+                    JavaScript.
+                  </p>
+                  <div class="flexProjectLink">
+                    <a
+                      href="https://github.com/Nakams26/Project-1"
+                      class="projectLink"
+                    >
+                      GitHub Repo</a
+                    >
+                    <a
+                      href="https://devadrienprojectone.netlify.app/"
+                      class="projectLink"
+                    >
+                      Live website</a
+                    >
+                  </div>
+                </div>
+              </li>
             </div>
-          </article>
+            <!-- End of the first row div -->
+            <!-- Adding a div for the second row -->
+            <div class="secondRow">
+              <li class="flexLi">
+                <div class="imgProjectsContainer">
+                  <img
+                    src="assets/Plantedinvitation.png"
+                    alt="A preview of the planted project"
+                  />
+                </div>
+                <h3>Project 3: Planted</h3>
+                <div class="flexProjectText">
+                  <p>
+                    The Planted project is my first ever project. It's a multi
+                    page responsive and accessible website around the plant
+                    universe. Technologies used here are HTML, CSS, SCSS and
+                    JavaScript.
+                  </p>
+                  <div class="flexProjectLink">
+                    <a
+                      href="https://github.com/Nakams26/Project-1"
+                      class="projectLink"
+                      >GitHub Repo
+                    </a>
+                    <a
+                      href="https://devadrienprojectone.netlify.app/"
+                      class="projectLink"
+                    >
+                      Live website</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="flexLi">
+                <div class="imgProjectsContainer">
+                  <img
+                    src="assets/Plantedinvitation.png"
+                    alt="A preview of the planted project"
+                  />
+                </div>
+                <h3>Project 4: Planted</h3>
+                <div class="flexProjectText">
+                  <p>
+                    The Planted project is my first ever project. It's a multi
+                    page responsive and accessible website around the plant
+                    universe. Technologies used here are HTML, CSS, SCSS and
+                    JavaScript.
+                  </p>
+                  <div class="flexProjectLink">
+                    <a
+                      href="https://github.com/Nakams26/Project-1"
+                      class="projectLink"
+                      >GitHub Repo
+                    </a>
+                    <a
+                      href="https://devadrienprojectone.netlify.app/"
+                      class="projectLink"
+                    >
+                      Live website</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </div>
+            <!-- End of second row -->
+          </ul>
+        </div>
+      </section>
+      <!-- End of section projects -->
+      <!-- Start of contact section -->
+      <section id="contact" class="contact">
+        <div class="wrapper flexContact">
+          <h2><span>Contact</span> me!</h2>
+          <div class="contactInfos">
+            <div class="mail">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone-flip"></i>
+            </div>
+            <div class="linkedin">
+              <a href="https://www.linkedin.com/in/adrien-polselli/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/Nakams26"
+                ><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <p class="contactText">
+            Please feel free to send me a message if you have any questions,
+            feedback, recommendations or if you want to discuss!
+          </p>
           <form class="contactForm" action="#" method="POST" name="contactUs">
             <label class="sr-only" for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" />

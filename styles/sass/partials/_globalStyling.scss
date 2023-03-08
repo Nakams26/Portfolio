@@ -26,6 +26,8 @@ h1 {
 }
 h2 {
   font-size: 2.7rem;
+  padding-bottom: 100px;
+  text-align: center;
 }
 h3 {
   font-size: 1.8rem;
@@ -45,4 +47,8 @@ label,
 textarea {
   font-family: $secondaryFont;
   font-size: 1.2rem;
+}
+
+section{
+  padding: 100px 0;
 }

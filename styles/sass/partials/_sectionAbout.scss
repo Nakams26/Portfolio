@@ -1,47 +1,51 @@
 // Adding variables for colors and font
 @use "./variables" as *;
 
-// ---------------Section styling start here ---------------//
-//Global section styling
-.about {
-  margin-top: 0;
-  padding-top: 100px;
+// ---------------Section about me styling start here ---------------//
+//Global section styling Using flex to center elemets
+.flexAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    padding-bottom: 30px;
+  }
   p {
     padding: 15px;
-    margin-left: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 6px 0px $fourthColor;
-    background-color: white;
+    text-align: center;
+    span{
+  
+      background-color: $primaryColor;
+    }
     a {
       font-size: 1.2rem;
-      font-weight: 400;
-      background-color: $fifthColor;
+      color: white;
+      background-color: $primaryColor;
+    }
+    a:hover, a:focus{
+      text-decoration: underline;
+     color:black;
     }
   }
 }
 //Styling h3
 h3 {
+  margin-bottom: 20px;
   span{
-    background-color: $thirdColor;
+    color: white;
+    background-color: $primaryColor;
   }
-  .skills {
-    background-color: $secondaryColor;
-  }
-}
-//Display image and text side by side
-.flexAboutArticle {
-  display: flex;
 }
 
 // Styling image
 .imgAbout {
-  width: 60%;
+  width: 20%;
+  margin-bottom: 20px;
   img {
-    border: 2px solid black;
     border-radius: 50%;
-    box-shadow: -5px -5px 6px 0px $fourthColor;
+    border: 3px solid black;
+
   }
 }
 
-// ---------------Section styling ends here ---------------//
+// ---------------Section about me styling ends here ---------------//
