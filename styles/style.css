@@ -583,6 +583,12 @@ h3 span {
   font-size: 1.5rem;
   color: black;
   padding-right: 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.contactInfos i:hover, .contactInfos i:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 form {
