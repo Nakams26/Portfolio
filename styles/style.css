@@ -474,7 +474,7 @@ h3 span {
   background-color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  border-radius: 20px 0;
+  border-radius: 20px;
 }
 .projects li img {
   border-top-left-radius: 20px;
