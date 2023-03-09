@@ -272,7 +272,8 @@ a {
 p,
 input,
 label,
-textarea {
+textarea,
+button {
   font-family: "Lora", serif;
   font-size: 1.2rem;
 }
@@ -348,7 +349,7 @@ header {
 }
 .flexHeader .cityFrance {
   position: absolute;
-  left: 420px;
+  left: 400px;
   bottom: 0;
   -webkit-animation: show 8s infinite;
           animation: show 8s infinite;
@@ -413,12 +414,12 @@ header {
   text-align: center;
 }
 .flexAbout p span {
-  background-color: #0FA3B1;
+  color: #1F61C4;
+  font-size: 1.5rem;
 }
 .flexAbout p a {
   font-size: 1.2rem;
-  color: white;
-  background-color: #0FA3B1;
+  color: #1F61C4;
 }
 .flexAbout p a:hover, .flexAbout p a:focus {
   text-decoration: underline;
@@ -429,8 +430,8 @@ h3 {
   margin-bottom: 20px;
 }
 h3 span {
-  color: white;
-  background-color: #0FA3B1;
+  font-size: 2rem;
+  color: #1F61C4;
 }
 
 .imgAbout {
@@ -547,7 +548,9 @@ h3 span {
 }
 
 .contact {
-  background-color: #324A5F;
+  background-image: url(../assets/mango-matter-1Ms3Zsb1v7g-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .flexContact {
@@ -564,16 +567,10 @@ h3 span {
 }
 .flexContact h2 {
   padding-bottom: 30px;
-  color: white;
 }
 .flexContact p {
   padding: 10px;
   text-align: center;
-  color: white;
-}
-.flexContact i {
-  font-size: 1.5rem;
-  padding-right: 20px;
 }
 
 .contactInfos {
@@ -583,12 +580,9 @@ h3 span {
 }
 .contactInfos i {
   padding: 10px;
-}
-.contactInfos .fa-phone-flip {
-  color: white;
-}
-.contactInfos .fa-envelope {
-  color: white;
+  font-size: 1.5rem;
+  color: black;
+  padding-right: 20px;
 }
 
 form {
@@ -629,12 +623,10 @@ form button:focus {
 }
 
 footer {
+  background-color: #2B4162;
+  color: white;
   text-align: center;
-}
-footer .sectionTest {
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  padding: 20px;
 }
 
 @-webkit-keyframes rotate {

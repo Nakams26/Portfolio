@@ -3,7 +3,9 @@
 // ---------------Contact Section styling start here ---------------//
 // Global section styling
 .contact {
-   background-color: $secondaryColor;
+  background-image: url(../assets/mango-matter-1Ms3Zsb1v7g-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .flexContact{
   display: flex;
@@ -11,17 +13,14 @@
   align-items: center;
   h2{
     padding-bottom: 30px;
-    color: white;
+
   }
   p {
     padding: 10px;
     text-align: center;
-    color: white;
+ 
   }
-  i {
-    font-size: 1.5rem;
-    padding-right: 20px;
-  }
+  
 }
 
 // Styling the contact infos box
@@ -31,14 +30,11 @@
 
   i{
     padding: 10px;
+    font-size: 1.5rem;
+    color: black;
+    padding-right: 20px;
   }
-  
-  .fa-phone-flip {
-    color: white;
-  }
-  .fa-envelope {
-    color: white;
-  }
+
 }
 
 

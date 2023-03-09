@@ -1,8 +1,8 @@
+// Adding variables for colors and font
+@use "./variables" as *;
 footer{
+    background-color: $fifthColor;
+    color: white;
     text-align: center;
-    .sectionTest{
-        padding:10px;
-        margin-top: 20px;
-        margin-bottom: 60px;
-    }
+    padding: 20px;
 }
