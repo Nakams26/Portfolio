@@ -21,6 +21,7 @@ header {
     margin-top: 160px;
     color: black;
   }
+ 
   p {
     position: relative;
     color: black;
@@ -33,6 +34,12 @@ header {
   .cityFrance {
     position: absolute;
     left: 400px;
+    bottom: 0;
+    animation: show 8s infinite;
+  }
+  .cityFrench{
+    position: absolute;
+    left: 390px;
     bottom: 0;
     animation: show 8s infinite;
   }

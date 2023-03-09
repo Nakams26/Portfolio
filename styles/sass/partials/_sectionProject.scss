@@ -10,11 +10,28 @@
   //Flexing ul to display Li side by sde
   .flexProjectUl{
     display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+
   }
   //Global li styling
   li{
-    margin: 30px;
+    margin-bottom: 50px;
+     width: calc((100% / 2) - 20px);
+    min-width: 400px ;
     background-color: white;
+    transition: 0.7s;
+    border-radius: 20px 0;
+    img{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    p{
+      text-align: center;
+    }
+  }
+  li:hover, li:focus{
+    transform: scale(1.1);
   }
 }
 // Using flex to Display image, article and links on top of each other
