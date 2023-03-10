@@ -3,7 +3,7 @@
 // ---------------Contact Section styling start here ---------------//
 // Global section styling
 .contact {
-  background-image: url(../assets/mango-matter-1Ms3Zsb1v7g-unsplash.jpg);
+  background-image: url(../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -13,12 +13,14 @@
   align-items: center;
   h2{
     padding-bottom: 30px;
-
+    color: white;
+    text-shadow: -1px 0px 10px black; 
   }
   p {
     padding: 10px;
     text-align: center;
- 
+    color: white;
+    text-shadow: -1px 0px 10px black; 
   }
   
 }
@@ -31,16 +33,16 @@
   i{
     padding: 10px;
     font-size: 2rem;
-    color: black;
+    color: white;
     padding-right: 20px;
     transition: 0.7s;
+    text-shadow: -1px 0px 10px black; 
   }
   i:hover, i:focus {
     transform: scale(1.5);
   }
 
 }
-
 
 // Styling the form
 form {
@@ -52,15 +54,15 @@ form {
   textarea {
     margin-bottom: 20px;
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid $primaryColor;
+     color: $primaryColor;
   }
   button {
   text-align: center;
   padding: 10px;
-  background-color: $fourthColor;
-  border-radius: 10px;
-  border: 3px solid black;
+  background-color: $primaryColor;
+
+  border: 3px solid white;
   color: white;
   transition: 0.7s;
     cursor: pointer;
@@ -69,7 +71,8 @@ form {
   button:focus {
     background-color: white;
     transform: scale(1.1);
-    color: black;
+    color: $primaryColor;
+    border: 3px solid $primaryColor;
   }
 }
 

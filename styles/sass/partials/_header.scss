@@ -4,7 +4,7 @@
 // ---------------Header styling start here ---------------//
 //Global section styling
 header {
-  background-image: url(../assets/imattsmart-kigHD-rVJzA-unsplash.jpg);
+  background-image: url(../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -18,30 +18,33 @@ header {
   align-items: center;
   // Styling h1
   h1 {
-    margin-top: 160px;
-    color: black;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    color: white;
+   text-shadow: -1px 0px 10px black; 
   }
  
   p {
     position: relative;
-    color: black;
+    color: white;
     font-size: 2rem;
+    text-shadow: -1px 0px 10px black; 
   }
   // Animation for 2 cities
   .cityCanada {
-    animation: hide 8s infinite;
+    animation: hide 5s infinite;
   }
   .cityFrance {
     position: absolute;
-    left: 400px;
+    left: 367px;
     bottom: 0;
-    animation: show 8s infinite;
+    animation: show 5s infinite;
   }
   .cityFrench{
     position: absolute;
-    left: 390px;
+    left: 348px;
     bottom: 0;
-    animation: show 8s infinite;
+    animation: show 5s infinite;
   }
 }
 
@@ -50,9 +53,8 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
-  background-color: $fourthColor;
-  border-radius: 10px;
-  border: 3px solid black;
+  background-color: $primaryColor;
+  border: 3px solid white;
   transition: 0.7s;
   a {
     color: white;
@@ -64,8 +66,11 @@ header {
   background-color: white;
   transform: scale(1.3);
 
+  border: 3px solid $primaryColor;
+
   a {
-    color: black;
+    color: $primaryColor;
+    text-shadow: none;
   }
 }
 

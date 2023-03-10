@@ -244,7 +244,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -274,7 +275,7 @@ input,
 label,
 textarea,
 button {
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -299,20 +300,25 @@ nav li {
   transition: 0.5s;
 }
 nav li a {
-  color: black;
+  color: white;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 nav li a:hover,
 nav li a:focus {
-  color: #385F71;
+  color: #1F61C4;
 }
 nav li:hover, nav li:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
+.frenchNav {
+  width: 65%;
+}
+
 header {
-  background-image: url(../assets/imattsmart-kigHD-rVJzA-unsplash.jpg);
+  background-image: url(../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -335,31 +341,34 @@ header {
           align-items: center;
 }
 .flexHeader h1 {
-  margin-top: 160px;
-  color: black;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  color: white;
+  text-shadow: -1px 0px 10px black;
 }
 .flexHeader p {
   position: relative;
-  color: black;
+  color: white;
   font-size: 2rem;
+  text-shadow: -1px 0px 10px black;
 }
 .flexHeader .cityCanada {
-  -webkit-animation: hide 8s infinite;
-          animation: hide 8s infinite;
+  -webkit-animation: hide 5s infinite;
+          animation: hide 5s infinite;
 }
 .flexHeader .cityFrance {
   position: absolute;
-  left: 400px;
+  left: 367px;
   bottom: 0;
-  -webkit-animation: show 8s infinite;
-          animation: show 8s infinite;
+  -webkit-animation: show 5s infinite;
+          animation: show 5s infinite;
 }
 .flexHeader .cityFrench {
   position: absolute;
-  left: 390px;
+  left: 348px;
   bottom: 0;
-  -webkit-animation: show 8s infinite;
-          animation: show 8s infinite;
+  -webkit-animation: show 5s infinite;
+          animation: show 5s infinite;
 }
 
 .link {
@@ -370,9 +379,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #385F71;
-  border-radius: 10px;
-  border: 3px solid black;
+  background-color: #1F61C4;
+  border: 3px solid white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -385,10 +393,12 @@ header {
   background-color: white;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+  border: 3px solid #1F61C4;
 }
 .link:hover a,
 .link:focus a {
-  color: black;
+  color: #1F61C4;
+  text-shadow: none;
 }
 
 .arrow {
@@ -399,6 +409,10 @@ header {
 .arrow i {
   font-size: 2rem;
   color: black;
+}
+
+.about {
+  background-color: rgba(2, 23, 52, 0.889);
 }
 
 .flexAbout {
@@ -415,18 +429,21 @@ header {
 }
 .flexAbout h2 {
   padding-bottom: 30px;
+  color: white;
+  text-shadow: -1px 0px 10px black;
 }
 .flexAbout p {
   padding: 15px;
   text-align: center;
+  color: white;
 }
 .flexAbout p span {
   color: #1F61C4;
-  font-size: 1.5rem;
 }
 .flexAbout p a {
-  font-size: 1.2rem;
   color: #1F61C4;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 .flexAbout p a:hover, .flexAbout p a:focus {
   text-decoration: underline;
@@ -448,14 +465,16 @@ h3 span {
 }
 .imgAbout img {
   border-radius: 50%;
-  border: 3px solid black;
+  border: 5px solid white;
 }
 
 .projects {
-  background-color: #F8F7FF;
+  background-color: rgba(2, 23, 52, 0.889);
 }
 .projects h2 {
-  padding-bottom: 30px;
+  padding-bottom: 100px;
+  color: white;
+  text-shadow: -1px 0px 10px black;
 }
 .projects .flexProjectUl {
   display: -webkit-box;
@@ -474,11 +493,6 @@ h3 span {
   background-color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  border-radius: 20px;
-}
-.projects li img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 .projects li p {
   text-align: center;
@@ -524,8 +538,7 @@ h3 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #385F71;
-  border-radius: 10px;
+  background-color: #1F61C4;
   border: 3px solid black;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -539,7 +552,8 @@ h3 span {
   background-color: white;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  color: black;
+  color: #1F61C4;
+  border: 3px solid #1F61C4;
 }
 
 .skills {
@@ -547,6 +561,7 @@ h3 span {
 }
 .skills h2 {
   color: white;
+  text-shadow: -1px 0px 10px black;
 }
 
 .ulSkills {
@@ -570,6 +585,7 @@ h3 span {
 }
 .ulSkills i {
   font-size: 3rem;
+  text-shadow: -1px 0px 10px black;
 }
 .ulSkills li:hover, .ulSkills li:focus {
   -webkit-animation: shake 1s ease infinite;
@@ -577,7 +593,7 @@ h3 span {
 }
 
 .contact {
-  background-image: url(../assets/mango-matter-1Ms3Zsb1v7g-unsplash.jpg);
+  background-image: url(../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -596,10 +612,14 @@ h3 span {
 }
 .flexContact h2 {
   padding-bottom: 30px;
+  color: white;
+  text-shadow: -1px 0px 10px black;
 }
 .flexContact p {
   padding: 10px;
   text-align: center;
+  color: white;
+  text-shadow: -1px 0px 10px black;
 }
 
 .contactInfos {
@@ -610,10 +630,11 @@ h3 span {
 .contactInfos i {
   padding: 10px;
   font-size: 2rem;
-  color: black;
+  color: white;
   padding-right: 20px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  text-shadow: -1px 0px 10px black;
 }
 .contactInfos i:hover, .contactInfos i:focus {
   -webkit-transform: scale(1.5);
@@ -635,15 +656,14 @@ form input,
 form textarea {
   margin-bottom: 20px;
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 2px solid #1F61C4;
+  color: #1F61C4;
 }
 form button {
   text-align: center;
   padding: 10px;
-  background-color: #385F71;
-  border-radius: 10px;
-  border: 3px solid black;
+  background-color: #1F61C4;
+  border: 3px solid white;
   color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -654,7 +674,8 @@ form button:focus {
   background-color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: black;
+  color: #1F61C4;
+  border: 3px solid #1F61C4;
 }
 
 footer {
@@ -664,27 +685,6 @@ footer {
   padding: 20px;
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @-webkit-keyframes show {
   0% {
     opacity: 0;
@@ -696,6 +696,7 @@ footer {
     opacity: 0;
   }
 }
+
 @keyframes show {
   0% {
     opacity: 0;

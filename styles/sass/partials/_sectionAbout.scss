@@ -2,24 +2,30 @@
 @use "./variables" as *;
 
 // ---------------Section about me styling start here ---------------//
-//Global section styling Using flex to center elemets
+//Global section styling Using flex to center elements
+.about{
+  background-color: rgba(2, 23, 52, 0.889);
+}
 .flexAbout {
   display: flex;
   flex-direction: column;
   align-items: center;
   h2{
     padding-bottom: 30px;
+    color: white;
+    text-shadow: -1px 0px 10px black; 
   }
   p {
     padding: 15px;
     text-align: center;
+    color: white;
     span{
       color: $primaryColor;
-      font-size: 1.5rem;
     }
     a {
-      font-size: 1.2rem;
       color: $primaryColor;
+      font-family: $primaryFont;
+      font-size: 1.2rem;
     }
     a:hover, a:focus{
       text-decoration: underline;
@@ -43,7 +49,7 @@ h3 {
   margin-bottom: 20px;
   img {
     border-radius: 50%;
-    border: 3px solid black;
+    border: 5px solid white;
 
   }
 }

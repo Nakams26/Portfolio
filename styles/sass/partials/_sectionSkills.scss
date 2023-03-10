@@ -3,10 +3,10 @@
 
 // ---------------Skills Section styling start here ---------------//
 .skills{
-  background-color: $fifthColor;
+  background-color: $fourthColor;
   h2{
     color: white;
-
+    text-shadow: -1px 0px 10px black; 
   }
 }
 // Display every icons side by side
@@ -26,6 +26,7 @@ justify-content: space-around;
      }
     i{
        font-size: 3rem;
+       text-shadow: -1px 0px 10px black; 
       
     }
     li:hover, li:focus{

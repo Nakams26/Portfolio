@@ -1,7 +1,8 @@
 // Adding variables for colors and font
 @use "./variables" as *;
+//Global styling
 footer{
-    background-color: $fifthColor;
+    background-color: $fourthColor;
     color: white;
     text-align: center;
     padding: 20px;
