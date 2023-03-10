@@ -6,6 +6,7 @@
   background-image: url(../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .flexContact{
   display: flex;
@@ -27,9 +28,7 @@
 
 // Styling the contact infos box
 .contactInfos {
-
   display: flex;
-
   i{
     padding: 10px;
     font-size: 2rem;
@@ -74,6 +73,32 @@ form {
     color: $primaryColor;
     border: 3px solid $primaryColor;
   }
+}
+
+//Display/hide info on hover
+
+.fa-envelope:hover + .emailAdress{
+  display: block;
+  text-shadow: -1px 0px 10px black; 
+}
+.emailAdress{
+  color: white;
+  position: absolute;
+  top: 155px;
+  left: 455px;
+  display: none;
+   text-shadow: -1px 0px 10px black; 
+}
+.fa-phone-flip:hover + .phoneNumber{
+  display: block;
+  text-shadow: -1px 0px 10px black; 
+}
+.phoneNumber {
+  color: white;
+  position: absolute;
+  top: 155px;
+  left: 585px;
+  display: none;
 }
 
 
