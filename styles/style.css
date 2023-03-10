@@ -321,6 +321,7 @@ header {
   background-image: url(../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -358,14 +359,14 @@ header {
 }
 .flexHeader .cityFrance {
   position: absolute;
-  left: 367px;
+  left: 365px;
   bottom: 0;
   -webkit-animation: show 5s infinite;
           animation: show 5s infinite;
 }
 .flexHeader .cityFrench {
   position: absolute;
-  left: 348px;
+  left: 345px;
   bottom: 0;
   -webkit-animation: show 5s infinite;
           animation: show 5s infinite;
@@ -376,16 +377,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1F61C4;
-  border: 3px solid white;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  border: 2px solid white;
+  background: #1F61C4;
+  color: white;
+  overflow: hidden;
 }
 .link a {
-  color: white;
+  text-shadow: none;
 }
 
 .link:hover,
@@ -401,6 +404,19 @@ header {
   text-shadow: none;
 }
 
+.link:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
+          animation: shiny-btn1 3s ease-in-out infinite;
+}
+
 .arrow {
   position: relative;
   -webkit-animation: jump 0.9s ease infinite;
@@ -412,7 +428,9 @@ header {
 }
 
 .about {
-  background-color: rgba(2, 23, 52, 0.889);
+  background: rgb(43, 65, 98);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(17%, rgb(43, 65, 98)), color-stop(50%, rgb(31, 97, 196)), color-stop(80%, rgb(0, 0, 0)));
+  background: linear-gradient(to top, rgb(43, 65, 98) 17%, rgb(31, 97, 196) 50%, rgb(0, 0, 0) 80%);
 }
 
 .flexAbout {
@@ -437,15 +455,12 @@ header {
   text-align: center;
   color: white;
 }
-.flexAbout p span {
-  color: #1F61C4;
-}
 .flexAbout p a {
-  color: #1F61C4;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
-.flexAbout p a:hover, .flexAbout p a:focus {
+.flexAbout p a:hover,
+.flexAbout p a:focus {
   text-decoration: underline;
   color: black;
 }
@@ -469,7 +484,9 @@ h3 span {
 }
 
 .projects {
-  background-color: rgba(2, 23, 52, 0.889);
+  background: rgb(43, 65, 98);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, rgb(43, 65, 98)), color-stop(50%, rgb(31, 97, 196)), color-stop(80%, rgb(0, 0, 0)));
+  background: linear-gradient(to bottom, rgb(43, 65, 98) 17%, rgb(31, 97, 196) 50%, rgb(0, 0, 0) 80%);
 }
 .projects h2 {
   padding-bottom: 100px;
@@ -539,9 +556,10 @@ h3 span {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1F61C4;
-  border: 3px solid #6190e8;
+  border: 2px solid #6190e8;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  overflow: hidden;
 }
 .projectLink a {
   color: white;
@@ -593,7 +611,7 @@ h3 span {
 }
 
 .contact {
-  background-image: url(../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
+  background-image: url(../assets/felix-besombes-EzrHLVd83h0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -614,13 +632,13 @@ h3 span {
 .flexContact h2 {
   padding-bottom: 30px;
   color: white;
-  text-shadow: -1px 0px 10px black;
+  text-shadow: -1px 0px 10px #1F61C4;
 }
 .flexContact p {
   padding: 10px;
   text-align: center;
   color: white;
-  text-shadow: -1px 0px 10px black;
+  text-shadow: -1px 0px 10px #1F61C4;
 }
 
 .contactInfos {
@@ -635,9 +653,10 @@ h3 span {
   padding-right: 20px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  text-shadow: -1px 0px 10px black;
+  text-shadow: -1px 0px 10px #1F61C4;
 }
-.contactInfos i:hover, .contactInfos i:focus {
+.contactInfos i:hover,
+.contactInfos i:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -664,7 +683,7 @@ form button {
   text-align: center;
   padding: 10px;
   background-color: #1F61C4;
-  border: 3px solid white;
+  border: 2px solid white;
   color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -756,6 +775,42 @@ footer {
   }
   100% {
     opacity: 10;
+  }
+}
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
   }
 }
 @-webkit-keyframes jump {

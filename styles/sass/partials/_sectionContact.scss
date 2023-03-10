@@ -3,44 +3,43 @@
 // ---------------Contact Section styling start here ---------------//
 // Global section styling
 .contact {
-  background-image: url(../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
+  background-image: url(../assets/felix-besombes-EzrHLVd83h0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 }
-.flexContact{
+.flexContact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+  h2 {
     padding-bottom: 30px;
     color: white;
-    text-shadow: -1px 0px 10px black; 
+    text-shadow: -1px 0px 10px $primaryColor;
   }
   p {
     padding: 10px;
     text-align: center;
     color: white;
-    text-shadow: -1px 0px 10px black; 
+    text-shadow: -1px 0px 10px $primaryColor;
   }
-  
 }
 
 // Styling the contact infos box
 .contactInfos {
   display: flex;
-  i{
+  i {
     padding: 10px;
     font-size: 2rem;
     color: white;
     padding-right: 20px;
     transition: 0.7s;
-    text-shadow: -1px 0px 10px black; 
+    text-shadow: -1px 0px 10px $primaryColor;
   }
-  i:hover, i:focus {
+  i:hover,
+  i:focus {
     transform: scale(1.5);
   }
-
 }
 
 // Styling the form
@@ -54,16 +53,15 @@ form {
     margin-bottom: 20px;
     padding: 10px;
     border: 2px solid $primaryColor;
-     color: $primaryColor;
+    color: $primaryColor;
   }
   button {
-  text-align: center;
-  padding: 10px;
-  background-color: $primaryColor;
-
-  border: 3px solid white;
-  color: white;
-  transition: 0.7s;
+    text-align: center;
+    padding: 10px;
+    background-color: $primaryColor;
+    border: 2px solid white;
+    color: white;
+    transition: 0.7s;
     cursor: pointer;
   }
   button:hover,
@@ -77,21 +75,21 @@ form {
 
 //Display/hide info on hover
 
-.fa-envelope:hover + .emailAdress{
+.fa-envelope:hover + .emailAdress {
   display: block;
-  text-shadow: -1px 0px 10px black; 
+  text-shadow: -1px 0px 10px black;
 }
-.emailAdress{
+.emailAdress {
   color: white;
   position: absolute;
   top: 155px;
   left: 455px;
   display: none;
-   text-shadow: -1px 0px 10px black; 
+  text-shadow: -1px 0px 10px black;
 }
-.fa-phone-flip:hover + .phoneNumber{
+.fa-phone-flip:hover + .phoneNumber {
   display: block;
-  text-shadow: -1px 0px 10px black; 
+  text-shadow: -1px 0px 10px black;
 }
 .phoneNumber {
   color: white;
@@ -100,6 +98,5 @@ form {
   left: 585px;
   display: none;
 }
-
 
 // ---------------Contact Section styling start here ---------------//

@@ -3,7 +3,9 @@
 // ---------------project Section styling start here ---------------//
 // Global section styling
 .projects {
-  background-color: $thirdColor;
+  background: rgb(43,65,98);
+background: linear-gradient(to bottom, rgba(43,65,98,1) 17%, rgba(31,97,196,1) 50%, rgba(0,0,0,1) 80%);
+
   h2{
     padding-bottom: 100px;
     color: white;
@@ -57,12 +59,14 @@ h3{
   display: flex;
   align-items: center;
   background-color: $primaryColor;
-  border: 3px solid $secondaryColor;
+  border: 2px solid $secondaryColor;
   transition: 0.7s;
+  overflow: hidden;
   a {
     color: white;
   }
 }
+
 .projectLink:hover,
 .projectLink:focus {
   background-color: white;

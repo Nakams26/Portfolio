@@ -7,6 +7,7 @@ header {
   background-image: url(../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 // Using flex to center every element
@@ -36,43 +37,56 @@ header {
   }
   .cityFrance {
     position: absolute;
-    left: 367px;
+    left: 365px;
     bottom: 0;
     animation: show 5s infinite;
   }
   .cityFrench{
     position: absolute;
-    left: 348px;
+    left: 345px;
     bottom: 0;
     animation: show 5s infinite;
   }
 }
 
-//   Styling link button
+//   Styling link button and adding animaton
+
 .link {
   padding: 10px;
   display: flex;
-  align-items: center;
-  background-color: $primaryColor;
-  border: 3px solid white;
   transition: 0.7s;
-  a {
+  align-items: center;
+  border: 2px solid white;
+  background: $primaryColor;
     color: white;
-  }
+    overflow: hidden;
+    a{
+      text-shadow: none;
+    }
 }
-
 .link:hover,
-.link:focus {
-  background-color: white;
-  transform: scale(1.3);
-
-  border: 3px solid $primaryColor;
-
-  a {
-    color: $primaryColor;
-    text-shadow: none;
-  }
+ .link:focus {
+   background-color: white;
+   transform: scale(1.3);
+   border: 3px solid $primaryColor;
+   a {
+        color: $primaryColor;
+         text-shadow: none;
+       }
+   
+ }
+.link:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
 }
+
 
 // Styling and anime arrow
 .arrow {
