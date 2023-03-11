@@ -1024,4 +1024,12 @@ footer {
   .contact form textarea {
     text-align: center;
   }
+  .contact .emailAdress {
+    left: 0;
+    top: 120px;
+  }
+  .contact .phoneNumber {
+    left: 50px;
+    top: 120px;
+  }
 }
