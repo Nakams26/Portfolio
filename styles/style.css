@@ -324,6 +324,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
 }
 
 .flexHeader {
@@ -425,6 +426,14 @@ header {
 .arrow i {
   font-size: 2rem;
   color: white;
+}
+
+.openMenu, .closeMenu {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: none;
+  cursor: pointer;
 }
 
 .about {
@@ -555,12 +564,7 @@ h3 span {
 .projectLink {
   margin: 20px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   background-color: #1F61C4;
   border: 2px solid #6190e8;
   -webkit-transition: 0.7s;
@@ -599,18 +603,25 @@ h3 span {
       justify-content: space-around;
 }
 .ulSkills li {
-  text-align: center;
-}
-.ulSkills li i {
-  color: white;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .ulSkills li p {
   padding: 50px;
   color: white;
 }
 .ulSkills i {
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   font-size: 3rem;
   text-shadow: -1px 0px 10px black;
 }
@@ -904,5 +915,72 @@ footer {
   40%, 100% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
+  }
+}
+@media (max-width: 1250px) {
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1020px) {
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 830px) {
+  nav {
+    display: none;
+  }
+  header .flexHeader {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .flexHeader h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  header .flexHeader p {
+    text-align: center;
+  }
+  header .flexHeader .cityFrance {
+    left: 128px;
+  }
+  header .flexHeader .openMenu {
+    color: white;
+  }
+  header .flexHeader .closeMenu {
+    display: none;
+  }
+  .about {
+    padding: 0;
+  }
+  .imgAbout {
+    width: 50%;
+  }
+  .skills {
+    padding-bottom: 0;
+  }
+  .skills li {
+    width: 40%;
+  }
+  .flexProjectUl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexProjectUl li {
+    min-width: 100%;
+  }
+  .contact {
+    padding-top: 0;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact form input, .contact form textarea {
+    text-align: center;
   }
 }

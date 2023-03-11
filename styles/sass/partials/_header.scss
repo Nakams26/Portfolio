@@ -9,6 +9,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
 }
 // Using flex to center every element
 .flexHeader {
@@ -93,5 +94,13 @@ header {
   }
   position: relative;
   animation: jump 0.9s ease infinite;
+}
+//Burger menu in the corner
+.openMenu, .closeMenu{
+ position: absolute;
+ right: 30px;
+ top: 30px;
+ display: none;
+ cursor: pointer;
 }
 // ---------------Header styling ends here ---------------//

@@ -1,0 +1,99 @@
+// Adding variables for colors and font
+@use "./variables" as *;
+
+// ---------------media query styling start here ---------------//
+
+@media (max-width: 1250px) {
+    // Reducing menu size
+  nav {
+    ul {
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+// Reducing menu size
+@media (max-width: 1020px) {
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+// Global mobile view
+  @media (max-width: 830px) {
+    // Nav media query
+    nav {
+      display: none;
+  }
+  //Header media query
+  header{
+     .flexHeader{
+        justify-content: space-evenly;
+     
+    h1{
+        margin-top: 50px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+       
+    }
+    .cityFrance{
+        left: 128px;
+        }
+        .openMenu{
+            color: white;
+          }
+          .closeMenu{
+            display: none;
+          }
+     }
+  }
+  // About section
+  .about {
+    padding: 0;
+  }
+  .imgAbout {
+    width: 50%;
+  }
+  //Skills section
+
+  .skills{
+    padding-bottom: 0;
+
+     li{
+        width: 40%;
+     }
+  }
+  //Project section
+
+  .flexProjectUl {
+    flex-direction: column;
+    li{
+        min-width: 100%;
+    }
+  }
+
+  //Contact Section
+
+  .contact{
+    padding-top: 0;
+    form{
+        width: 100%;
+       input, textarea {
+        text-align: center;
+       }
+    }
+  }
+
+}
