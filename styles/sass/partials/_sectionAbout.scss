@@ -20,14 +20,19 @@
     padding-bottom: 30px;
     color: white;
     text-shadow: -1px 0px 10px black;
+    -webkit-text-stroke: 1px orange;
   }
   p {
     padding: 15px;
     text-align: center;
     color: white;
+    span {
+      color: orange;
+    }
     a {
       font-family: $primaryFont;
       font-size: 1.2rem;
+      color: orange;
     }
     a:hover,
     a:focus {
@@ -45,7 +50,6 @@ h3 {
     color: $primaryColor;
   }
 }
-
 // Styling image
 .imgAbout {
   width: 20%;

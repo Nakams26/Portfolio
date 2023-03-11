@@ -306,9 +306,10 @@ nav li a {
 }
 nav li a:hover,
 nav li a:focus {
-  color: #1F61C4;
+  color: orange;
 }
-nav li:hover, nav li:focus {
+nav li:hover,
+nav li:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -344,7 +345,7 @@ header {
 .flexHeader h1 {
   margin-top: 120px;
   color: white;
-  text-shadow: -1px 0px 15px black;
+  -webkit-text-stroke: 1px orange;
 }
 .flexHeader p {
   position: relative;
@@ -395,11 +396,11 @@ header {
   background-color: white;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  border: 3px solid #1F61C4;
+  border: 3px solid orange;
 }
 .link:hover a,
 .link:focus a {
-  color: #1F61C4;
+  color: orange;
   text-shadow: none;
 }
 
@@ -412,8 +413,8 @@ header {
   width: 30px;
   height: 100%;
   background-color: #fff;
-  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
-          animation: shiny-btn1 3s ease-in-out infinite;
+  -webkit-animation: shiny 3s ease-in-out infinite;
+          animation: shiny 3s ease-in-out infinite;
 }
 
 .arrow {
@@ -448,15 +449,20 @@ header {
   padding-bottom: 30px;
   color: white;
   text-shadow: -1px 0px 10px black;
+  -webkit-text-stroke: 1px orange;
 }
 .flexAbout p {
   padding: 15px;
   text-align: center;
   color: white;
 }
+.flexAbout p span {
+  color: orange;
+}
 .flexAbout p a {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  color: orange;
 }
 .flexAbout p a:hover,
 .flexAbout p a:focus {
@@ -491,6 +497,7 @@ h3 span {
   padding-bottom: 100px;
   color: white;
   text-shadow: -1px 0px 10px black;
+  -webkit-text-stroke: 1px orange;
 }
 .projects .flexProjectUl {
   display: -webkit-box;
@@ -569,8 +576,8 @@ h3 span {
   background-color: white;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  color: #1F61C4;
-  border: 3px solid #1F61C4;
+  color: orange;
+  border: 3px solid orange;
 }
 
 .skills {
@@ -579,6 +586,7 @@ h3 span {
 .skills h2 {
   color: white;
   text-shadow: -1px 0px 10px black;
+  -webkit-text-stroke: 1px orange;
 }
 
 .ulSkills {
@@ -595,6 +603,8 @@ h3 span {
 }
 .ulSkills li i {
   color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .ulSkills li p {
   padding: 50px;
@@ -603,6 +613,9 @@ h3 span {
 .ulSkills i {
   font-size: 3rem;
   text-shadow: -1px 0px 10px black;
+}
+.ulSkills i:hover, .ulSkills i:focus {
+  -webkit-text-stroke: 1px orange;
 }
 .ulSkills li:hover, .ulSkills li:focus {
   -webkit-animation: shake 1s ease infinite;
@@ -631,13 +644,12 @@ h3 span {
 .flexContact h2 {
   padding-bottom: 30px;
   color: white;
-  text-shadow: -1px 0px 10px #1F61C4;
+  -webkit-text-stroke: 1px orange;
 }
 .flexContact p {
   padding: 10px;
   text-align: center;
   color: white;
-  text-shadow: -1px 0px 10px #1F61C4;
 }
 
 .contactInfos {
@@ -652,12 +664,12 @@ h3 span {
   padding-right: 20px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  text-shadow: -1px 0px 10px #1F61C4;
 }
 .contactInfos i:hover,
 .contactInfos i:focus {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  -webkit-text-stroke: 1px orange;
 }
 
 form {
@@ -693,8 +705,8 @@ form button:focus {
   background-color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #1F61C4;
-  border: 3px solid #1F61C4;
+  color: orange;
+  border: 3px solid orange;
 }
 
 .fa-envelope:hover + .emailAdress {
@@ -776,7 +788,7 @@ footer {
     opacity: 10;
   }
 }
-@-webkit-keyframes shiny-btn1 {
+@-webkit-keyframes shiny {
   0% {
     -webkit-transform: scale(0) rotate(45deg);
     opacity: 0;
@@ -794,7 +806,7 @@ footer {
     opacity: 0;
   }
 }
-@keyframes shiny-btn1 {
+@keyframes shiny {
   0% {
     -webkit-transform: scale(0) rotate(45deg);
     opacity: 0;

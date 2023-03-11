@@ -26,9 +26,9 @@
   }
 }
 
-//Animation for links
+//Animation for links ( coming from code pen https://codepen.io/yuhomyan/pen/OJMejWJ)
 
-@keyframes shiny-btn1 {
+@keyframes shiny {
   0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
   80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
   81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }

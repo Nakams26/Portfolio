@@ -20,16 +20,15 @@ header {
   // Styling h1
   h1 {
     margin-top: 120px;
-  
     color: white;
-   text-shadow: -1px 0px 15px black; 
+    -webkit-text-stroke: 1px orange;
   }
- 
+
   p {
     position: relative;
     color: white;
     font-size: 2rem;
-    text-shadow: -1px 0px 10px black; 
+    text-shadow: -1px 0px 10px black;
   }
   // Animation for 2 cities
   .cityCanada {
@@ -41,7 +40,7 @@ header {
     bottom: 0;
     animation: show 5s infinite;
   }
-  .cityFrench{
+  .cityFrench {
     position: absolute;
     left: 345px;
     bottom: 0;
@@ -49,7 +48,7 @@ header {
   }
 }
 
-//   Styling link button and adding animaton
+//   Styling link button and adding animation from code pen (https://codepen.io/yuhomyan/pen/OJMejWJ)
 
 .link {
   padding: 10px;
@@ -58,35 +57,33 @@ header {
   align-items: center;
   border: 2px solid white;
   background: $primaryColor;
-    color: white;
-    overflow: hidden;
-    a{
-      text-shadow: none;
-    }
+  color: white;
+  overflow: hidden;
+  a {
+    text-shadow: none;
+  }
 }
 .link:hover,
- .link:focus {
-   background-color: white;
-   transform: scale(1.3);
-   border: 3px solid $primaryColor;
-   a {
-        color: $primaryColor;
-         text-shadow: none;
-       }
-   
- }
-.link:before {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    top: -180px;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background-color: #fff;
-    animation: shiny-btn1 3s ease-in-out infinite;
+.link:focus {
+  background-color: white;
+  transform: scale(1.3);
+  border: 3px solid orange;
+  a {
+    color: orange;
+    text-shadow: none;
+  }
 }
-
+.link:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny 3s ease-in-out infinite;
+}
 
 // Styling and anime arrow
 .arrow {
