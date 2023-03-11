@@ -720,22 +720,12 @@ form button:focus {
   border: 3px solid orange;
 }
 
-.fa-envelope:hover + .emailAdress {
-  display: block;
-  text-shadow: -1px 0px 10px black;
-}
-
 .emailAdress {
   color: white;
   position: absolute;
   top: 155px;
   left: 455px;
   display: none;
-  text-shadow: -1px 0px 10px black;
-}
-
-.fa-phone-flip:hover + .phoneNumber {
-  display: block;
   text-shadow: -1px 0px 10px black;
 }
 
@@ -959,6 +949,21 @@ footer {
   nav ul li {
     padding: 5px;
   }
+  .frenchNav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    -webkit-animation: dropDown 0.9s ease 1;
+            animation: dropDown 0.9s ease 1;
+  }
+  .frenchNav ul li {
+    padding: 5px;
+    text-align: center;
+  }
+  .frenchNav ul li a {
+    font-size: 0.65rem;
+  }
   header .flexHeader {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -974,6 +979,9 @@ footer {
   }
   header .flexHeader .cityFrance {
     left: 128px;
+  }
+  header .flexHeader .cityFrench {
+    left: 110px;
   }
   header .flexHeader .openMenu {
     color: white;
@@ -994,6 +1002,9 @@ footer {
   .skills li {
     width: 40%;
   }
+  .frenchSkills {
+    font-size: 2rem;
+  }
   .flexProjectUl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1009,7 +1020,8 @@ footer {
   .contact form {
     width: 100%;
   }
-  .contact form input, .contact form textarea {
+  .contact form input,
+  .contact form textarea {
     text-align: center;
   }
 }

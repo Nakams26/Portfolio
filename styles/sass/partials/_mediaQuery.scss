@@ -4,7 +4,7 @@
 // ---------------media query styling start here ---------------//
 
 @media (max-width: 1250px) {
-    // Reducing menu size
+  // Reducing menu size
   nav {
     ul {
       li {
@@ -17,60 +17,77 @@
 }
 // Reducing menu size
 @media (max-width: 1020px) {
-    nav {
-      ul {
-        li {
-          a {
-            font-size: 0.8rem;
-          }
+  nav {
+    ul {
+      li {
+        a {
+          font-size: 0.8rem;
         }
       }
     }
   }
+}
 
 // Global mobile view
-  @media (max-width: 830px) {
-    // Nav media query
-    nav {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 10px;
-      animation: dropDown 0.9s ease 1;
-    
-      ul{
+@media (max-width: 830px) {
+  // Nav media query
+  nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: dropDown 0.9s ease 1;
+
+    ul {
+      li {
+        padding: 5px;
+      }
+    }
+  }
+  .frenchNav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: dropDown 0.9s ease 1;
+    ul{
         li{
             padding: 5px;
+            text-align: center;
+            a{
+                font-size: 0.65rem;
+            }
         }
-      }
-
-
+    }
+   
   }
   //Header media query
-  header{
-     .flexHeader{
-        justify-content: space-evenly;
-     
-    h1{
+  header {
+    .flexHeader {
+      justify-content: space-evenly;
+
+      h1 {
         margin-top: 50px;
         font-size: 2rem;
         text-align: center;
-    }
-    p{
+      }
+      p {
         text-align: center;
-       
-    }
-    .cityFrance{
+      }
+      .cityFrance {
         left: 128px;
-        }
-        .openMenu{
-            color: white;
-          }
-          .closeMenu{
-            display: none;
-            color: white;
-          }
-     }
+      }
+      .cityFrench{
+        left: 110px;
+      }
+      .openMenu {
+        color: white;
+      }
+      .closeMenu {
+        display: none;
+        color: white;
+      }
+    }
   }
   // About section
   .about {
@@ -81,32 +98,35 @@
   }
   //Skills section
 
-  .skills{
+  .skills {
     padding-bottom: 0;
 
-     li{
-        width: 40%;
-     }
+    li {
+      width: 40%;
+    }
+  }
+  .frenchSkills{
+    font-size: 2rem;
   }
   //Project section
 
   .flexProjectUl {
     flex-direction: column;
-    li{
-        min-width: 100%;
+    li {
+      min-width: 100%;
     }
   }
 
   //Contact Section
 
-  .contact{
+  .contact {
     padding-top: 0;
-    form{
-        width: 100%;
-       input, textarea {
+    form {
+      width: 100%;
+      input,
+      textarea {
         text-align: center;
-       }
+      }
     }
   }
-
 }

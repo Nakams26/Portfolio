@@ -74,10 +74,7 @@ form {
 
 //Display/hide info on hover
 
-.fa-envelope:hover + .emailAdress {
-  display: block;
-  text-shadow: -1px 0px 10px black;
-}
+
 .emailAdress {
   color: white;
   position: absolute;
@@ -86,10 +83,7 @@ form {
   display: none;
   text-shadow: -1px 0px 10px black;
 }
-.fa-phone-flip:hover + .phoneNumber {
-  display: block;
-  text-shadow: -1px 0px 10px black;
-}
+
 .phoneNumber {
   color: white;
   position: absolute;
