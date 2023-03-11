@@ -431,7 +431,7 @@ header {
 .openMenu, .closeMenu {
   position: absolute;
   right: 30px;
-  top: 35px;
+  top: 38px;
   display: none;
   cursor: pointer;
 }
