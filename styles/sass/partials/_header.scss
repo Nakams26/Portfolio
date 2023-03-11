@@ -26,19 +26,23 @@ header {
   }
 
   p {
-    position: relative;
     color: white;
     font-size: 2rem;
     text-shadow: -1px 0px 10px black;
   }
+ 
   // Animation for 2 cities
+
+  .title {
+    position: relative;
+  }
   .cityCanada {
     animation: hide 5s infinite;
   }
   .cityFrance {
-    position: absolute;
-    left: 365px;
-    bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 367px;
     animation: show 5s infinite;
   }
   .cityFrench {
@@ -52,6 +56,7 @@ header {
 //   Styling link button and adding animation from code pen (https://codepen.io/yuhomyan/pen/OJMejWJ)
 
 .link {
+  position: relative;
   padding: 10px;
   display: flex;
   transition: 0.7s;
@@ -61,6 +66,7 @@ header {
   color: white;
   overflow: hidden;
   a {
+
     text-shadow: none;
   }
 }

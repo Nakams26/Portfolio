@@ -349,10 +349,12 @@ header {
   -webkit-text-stroke: 1px orange;
 }
 .flexHeader p {
-  position: relative;
   color: white;
   font-size: 2rem;
   text-shadow: -1px 0px 10px black;
+}
+.flexHeader .title {
+  position: relative;
 }
 .flexHeader .cityCanada {
   -webkit-animation: hide 5s infinite;
@@ -360,8 +362,8 @@ header {
 }
 .flexHeader .cityFrance {
   position: absolute;
-  left: 365px;
-  bottom: 0;
+  top: 0;
+  left: 367px;
   -webkit-animation: show 5s infinite;
           animation: show 5s infinite;
 }
@@ -374,6 +376,7 @@ header {
 }
 
 .link {
+  position: relative;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
