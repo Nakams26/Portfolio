@@ -523,7 +523,7 @@ h3 span {
 }
 .projects li {
   margin-bottom: 50px;
-  width: calc(50% - 20px);
+  width: calc(33.3333333333% - 20px);
   min-width: 400px;
   background-color: white;
   -webkit-transition: 0.7s;
