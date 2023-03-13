@@ -1,12 +1,10 @@
 //Burger menu
 
 //Adding variables that I need
-const header = document.querySelector(".headerEnglish");
+const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
-const switchFrench = document.querySelector(".switchFrench")
-
 
 //Adding an event listener on the header, targeting burger menu icons
 header.addEventListener("click", function (event) {
@@ -20,19 +18,6 @@ header.addEventListener("click", function (event) {
     openMenu.style.display = "block";
     closeMenu.style.display = "none";
     nav.style.display = "none";
-  }
-});
-
-// DIsplaying text to go  to french page when hovering
-
-header.addEventListener("mouseover", function (event) {
-  //If the french flag is hovered I display a small text
-  if (event.target.classList[0] === "frenchFlag") {
-      switchFrench.style.display = "block"
-    
-     //If not, I hide the text
-  } else {
-    switchFrench.style.display = "none"
   }
 });
 

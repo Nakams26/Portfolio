@@ -16,72 +16,49 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   // Styling h1
   h1 {
-    color: orange;
+    color: white;
+    padding: 0 90px;
+    text-align: center;
+    border-bottom: 2px solid orange;
+    span{
+      display: block;
+    }
   }
   p {
+    font-weight: 100;
     color: white;
-    font-size: 2rem;
-    text-shadow: -1px 0px 10px black;
+    font-size: 1.4rem;
+  margin-bottom: 180px;
   }
   // Animation for 2 cities
-  .title {
-    position: relative;
-  }
-  .cityCanada {
-    animation: hide 5s infinite;
-  }
-  .cityFrance {
-  position: absolute;
-  top: 0;
-  left: 365px;
-    animation: show 5s infinite;
-  }
-  .cityFrench {
-    position: absolute;
-    left: 345px;
-    bottom: 0;
-    animation: show 5s infinite;
-  }
+  
 }
 
 //   Styling link button and adding animation from code pen (https://codepen.io/yuhomyan/pen/OJMejWJ)
 
 .link {
   position: relative;
-  padding: 10px;
+  padding: 10px 45px;
   display: flex;
   transition: 0.7s;
-  align-items: center;
   border: 2px solid white;
   color: white;
-  overflow: hidden;
+  background-color: black;
+  a{
+    font-weight: 400;
+  }
+
 }
 
 .link:hover,
 .link:focus {
-  background-color: white;
   transform: scale(1.3);
-  border: 3px solid orange;
-  a {
-    color: orange;
-    text-shadow: none;
-  }
 }
-.link:before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: -180px;
-  left: 0;
-  width: 30px;
-  height: 100%;
-  background-color: #fff;
-  animation: shiny 3s ease-in-out infinite;
-}
+
 
 // Styling and anime arrow
 .arrow {
@@ -106,30 +83,13 @@ header {
 position: absolute;
 top: 20px;
 right: 30px;
-  display: flex;
-  align-items: center;
-  .englishFlag{
-    width: 90px;
-    opacity: 0.5;
-  }
-  .frenchFlag{
-    width: 72px;
-  }
-  .englishFlagFr{
-    width: 90px;
-    margin-top: 2px;
-    
-  }
-  .frenchFlagFr{
-    width: 72px;
-    opacity: 0.5;
-  }
-
- .switchFrench, .switchEnglish{
-  display: none;
-  position: absolute;
-  right: 50px;
-  font-size: 1rem;
+ .languages {
+  font-size: 1.2rem;
+  transition: 0.7s;
  }
+ .languages:hover,  .languages:focus{
+  color: orange;
+  transform: scale(1.3);
+ } 
 }
 // ---------------Header styling ends here ---------------//

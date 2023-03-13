@@ -1,51 +1,16 @@
 
 //---------------------Start of header animation-----------------//
- //Header Hide show animation
-
- @keyframes show {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 10;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes hide {
-  0% {
-    opacity: 10;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 10;
-  }
-}
-
-//Animation for links ( coming from code pen https://codepen.io/yuhomyan/pen/OJMejWJ)
-
-@keyframes shiny {
-  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-}
-  
 // Jump animation for arrow
 
 @keyframes jump {
   0% {
-    top: -20px;
+    bottom: 150px;
   }
   50% {
-    top: 0px;
+    bottom: 120px;
   }
   100% {
-    top: -20px;
+    bottom: 150px;
   }
 }
 //---------------------End of header animation-----------------//
