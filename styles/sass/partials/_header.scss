@@ -57,14 +57,10 @@ header {
   transition: 0.7s;
   align-items: center;
   border: 2px solid white;
-  background: $primaryColor;
   color: white;
   overflow: hidden;
-  a {
-
-    text-shadow: none;
-  }
 }
+
 .link:hover,
 .link:focus {
   background-color: white;

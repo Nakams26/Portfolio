@@ -265,7 +265,6 @@ h3 {
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   color: white;
   font-size: 0.9rem;
 }
@@ -385,12 +384,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid white;
-  background: #1F61C4;
   color: white;
   overflow: hidden;
-}
-.link a {
-  text-shadow: none;
 }
 
 .link:hover,
@@ -491,7 +486,6 @@ header {
 .flexAbout h2 {
   padding-bottom: 30px;
   color: orange;
-  text-shadow: -1px 0px 10px black;
 }
 .flexAbout p {
   padding: 15px;
@@ -534,7 +528,6 @@ h3 span {
 .projects h2 {
   padding-bottom: 100px;
   color: orange;
-  text-shadow: -1px 0px 10px black;
 }
 .projects .flexProjectUl {
   display: -webkit-box;
@@ -617,7 +610,6 @@ h3 span {
 }
 .skills h2 {
   color: orange;
-  text-shadow: -1px 0px 10px black;
 }
 
 .ulSkills {
@@ -1002,7 +994,7 @@ footer {
   }
   header .flexHeader h1 {
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-align: center;
   }
   header .flexHeader p {
