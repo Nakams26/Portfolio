@@ -16,7 +16,7 @@ background: linear-gradient(to bottom, rgba(43,65,98,1) 17%, rgba(31,97,196,1) 5
   .flexProjectUl{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
   }
   //Global li styling
   li{
