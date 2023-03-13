@@ -249,7 +249,7 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -361,7 +361,7 @@ header {
 .flexHeader .cityFrance {
   position: absolute;
   top: 0;
-  left: 367px;
+  left: 365px;
   -webkit-animation: show 5s infinite;
           animation: show 5s infinite;
 }
@@ -498,18 +498,14 @@ header {
   text-align: center;
   color: white;
 }
-.flexAbout p span {
-  color: orange;
-}
 .flexAbout p a {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  color: orange;
 }
 .flexAbout p a:hover,
 .flexAbout p a:focus {
   text-decoration: underline;
-  color: black;
+  color: orange;
 }
 
 h3 {
@@ -1066,6 +1062,15 @@ footer {
   .flexProjectUl li {
     min-width: 100%;
   }
+  .flexProjectUl li:hover, .flexProjectUl li:focus {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .projectLink:hover,
+  .projectLink:focus {
+    -webkit-transform: none;
+            transform: none;
+  }
   .contact {
     padding-top: 0;
   }
@@ -1083,5 +1088,10 @@ footer {
   .contact .phoneNumber {
     left: 50px;
     top: 120px;
+  }
+  .contact button:hover,
+  .contact button:focus {
+    -webkit-transition: none;
+    transition: none;
   }
 }

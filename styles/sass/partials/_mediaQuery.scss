@@ -134,7 +134,14 @@
     li {
       min-width: 100%;
     }
+    li:hover, li:focus{
+      transform: none;
+    }
   }
+  .projectLink:hover,
+.projectLink:focus {
+  transform: none;
+}
 
   //Contact Section
 
@@ -154,6 +161,10 @@
     .phoneNumber{
       left: 50px;
       top: 120px;
+    }
+    button:hover,
+    button:focus {
+      transition: none;
     }
   }
 }

@@ -20,19 +20,14 @@ header {
   align-items: center;
   // Styling h1
   h1 {
-
     color: orange;
- 
   }
-
   p {
     color: white;
     font-size: 2rem;
     text-shadow: -1px 0px 10px black;
   }
- 
   // Animation for 2 cities
-
   .title {
     position: relative;
   }
@@ -42,7 +37,7 @@ header {
   .cityFrance {
   position: absolute;
   top: 0;
-  left: 367px;
+  left: 365px;
     animation: show 5s infinite;
   }
   .cityFrench {
