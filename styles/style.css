@@ -335,6 +335,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -354,6 +357,7 @@ header {
   font-size: 1.4rem;
   margin-bottom: 180px;
   margin-top: 15px;
+  text-align: center;
 }
 
 .link {
@@ -874,7 +878,7 @@ footer {
     font-size: 1rem;
   }
   .languageIcon {
-    top: 80px;
+    top: 45px;
     right: 13px;
   }
   .about {
