@@ -341,7 +341,7 @@ header {
 }
 .flexHeader h1 {
   color: white;
-  padding: 0 90px;
+  padding: 0 100px;
   text-align: center;
   border-bottom: 2px solid orange;
 }
@@ -353,6 +353,7 @@ header {
   color: white;
   font-size: 1.4rem;
   margin-bottom: 180px;
+  margin-top: 15px;
 }
 
 .link {
@@ -589,10 +590,6 @@ h3 span {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   font-size: 3rem;
-  text-shadow: -1px 0px 10px black;
-}
-.ulSkills i:hover, .ulSkills i:focus {
-  -webkit-text-stroke: 1px orange;
 }
 .ulSkills li:hover, .ulSkills li:focus {
   -webkit-animation: shake 1s ease infinite;

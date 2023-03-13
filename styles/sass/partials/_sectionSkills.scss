@@ -27,11 +27,8 @@ justify-content: space-around;
       color: white;
       transition: 0.7s;
        font-size: 3rem;
-       text-shadow: -1px 0px 10px black; 
     }
-    i:hover, i:focus {
-      -webkit-text-stroke: 1px orange;
-    }
+   
     li:hover, li:focus{
       animation: shake 1s ease infinite;
   }
