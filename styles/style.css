@@ -388,10 +388,11 @@ header {
 }
 
 .openMenu, .closeMenu {
+  display: none;
+  color: black;
   position: absolute;
   right: 10px;
   top: 38px;
-  display: none;
   cursor: pointer;
 }
 
@@ -853,8 +854,10 @@ footer {
   .frenchNav ul li a {
     font-size: 0.65rem;
   }
-  .openMenu, .closeMenu {
+  .openMenu {
+    display: block;
     color: white;
+    z-index: 10;
   }
   header .flexHeader {
     -webkit-box-pack: space-evenly;

@@ -72,10 +72,11 @@ header {
 }
 //Burger menu in the corner
 .openMenu, .closeMenu{
+ display: none;
+ color: black;
  position: absolute;
  right: 10px;
  top: 38px;
- display: none;
  cursor: pointer;
 }
 

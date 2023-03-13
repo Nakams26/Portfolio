@@ -65,9 +65,12 @@
     }
 
   }
-  .openMenu, .closeMenu {
+  .openMenu {
+    display: block;
     color: white;
+    z-index: 10;
   }
+
   //Header media query
   header {
     .flexHeader {
