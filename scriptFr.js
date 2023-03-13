@@ -1,15 +1,13 @@
-//Burger menu
-
-//Adding variables that I need
-const header = document.querySelector(".headerEnglish");
+const headerFrench = document.querySelector(".headerFrench");
+const switchEnglish = document.querySelector(".switchEnglish")
 const nav = document.querySelector("nav");
 const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
-const switchFrench = document.querySelector(".switchFrench")
+
 
 
 //Adding an event listener on the header, targeting burger menu icons
-header.addEventListener("click", function (event) {
+headerFrench.addEventListener("click", function (event) {
   //If open menu is clicked, I hide the open menu icon, display the nav and display the close menu icon
   if (event.target.classList[1] === "openMenu") {
     openMenu.style.display = "none";
@@ -23,21 +21,20 @@ header.addEventListener("click", function (event) {
   }
 });
 
-// DIsplaying text to go  to french page when hovering
+// DIsplaying text to go back to english page when hovering
+headerFrench.addEventListener("mouseover", function (event) {
+    //If the english flag is hovered I display a small text
+    if (event.target.classList[0] === "englishFlagFr") {
+        switchEnglish.style.display = "block"
+      //If not, I hide the text
+    } else {
+      switchEnglish.style.display = "none"
+    }
+  });
+  
 
-header.addEventListener("mouseover", function (event) {
-  //If the french flag is hovered I display a small text
-  if (event.target.classList[0] === "frenchFlag") {
-      switchFrench.style.display = "block"
-    
-     //If not, I hide the text
-  } else {
-    switchFrench.style.display = "none"
-  }
-});
 
-
-//Displaying phone number and email address when clicking on the related icon
+  //Displaying phone number and email address when clicking on the related icon
 //Adding variables that I need
 const contactSection = document.querySelector(".contact");
 const emailIcon = document.querySelector(".fa-envelope")

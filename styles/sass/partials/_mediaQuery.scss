@@ -42,6 +42,10 @@
       li {
         padding: 5px;
       }
+      li:hover,
+  li:focus {
+    transform: none;
+  }
     }
   }
   .frenchNav {
@@ -88,6 +92,19 @@
         display: none;
         color: white;
       }
+    }
+  }
+  //Language icon
+  .languageIcon{
+    flex-direction: column;
+    top: 80px;
+    right: 10px;
+    .englishFlag,.englishFlagFr{
+      width: 50px;
+    
+    }
+    .frenchFlag, .frenchFlagFr{
+      width: 41px;
     }
   }
   // About section

@@ -26,7 +26,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="headerFrench">
       <div class="wrapper flexHeader">
         <!-- Burger menu icons -->
         <span class="material-symbols-outlined openMenu"> menu </span>
@@ -49,9 +49,24 @@
         <p class="link">
           <a href="#contact">Me contacter</a>
         </p>
-        <p class="link">
-          <a href="./index.html">Anglais / English</a>
-        </p>
+        <div class="languageIcon">
+          <a href="./index.html">
+            <img
+              class="englishFlagFr"
+              src="./assets/inactive English.png"
+              alt="English flag"
+            />
+            <p class="switchEnglish">Anglais/English</p>
+          </a>
+
+          <div>
+            <img
+              class="frenchFlagFr"
+              src="./assets/active French.png"
+              alt="French flag"
+            />
+          </div>
+        </div>
         <div class="arrow">
           <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
         </div>
@@ -80,8 +95,9 @@
             Je suis un Web-Développeur avec de l'expérience dans le
             <span> <strong>support technique</strong></span
             >, à la fois comme agent et chef d'équipe. Après 10 ans à travailler
-            en collaboration avec différentes équipes dev, à apprendre différents languages et logiciels, j'ai décidé en 2022 que
-            devenir développeur serait la prochaine étape de ma carrière!
+            en collaboration avec différentes équipes dev, à apprendre
+            différents languages et logiciels, j'ai décidé en 2022 que devenir
+            développeur serait la prochaine étape de ma carrière!
           </p>
           <p>
             Après avoir réussi le
@@ -305,7 +321,12 @@
             utilisant les liens ci-dessus ou le formulaire de contact! Merci !
           </p>
 
-          <form class="contactForm" action="https://getform.io/f/706c1a11-79a6-49c2-85eb-a732c7cc50ec" method="POST" name="contactUs">
+          <form
+            class="contactForm"
+            action="https://getform.io/f/706c1a11-79a6-49c2-85eb-a732c7cc50ec"
+            method="POST"
+            name="contactUs"
+          >
             <label class="sr-only" for="name">Nom</label>
             <input type="text" id="name" name="name" placeholder="Nom" />
             <label class="sr-only" for="emailAddress">Adresse Email</label>
@@ -339,6 +360,6 @@
       </div>
     </footer>
     <!-- End of footer -->
-    <script src="./script.js"></script>
+    <script src="./scriptFr.js"></script>
   </body>
 </html>
