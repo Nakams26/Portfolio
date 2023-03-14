@@ -50,3 +50,15 @@ contactSection.addEventListener("click", function (event) {
 });
 
 
+//3.Clearing a form after a submission
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
+
+
+
+
