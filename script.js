@@ -50,29 +50,3 @@ contactSection.addEventListener("click", function (event) {
 });
 
 
-//3.Error handling for contact form 
-
-const form = document.querySelector("form");
-const userName = document.querySelector("#name");
-const email = document.querySelector("#emailAddress");
-const text = document.querySelector("#feedback");
-
-form.addEventListener("submit", function(e){
-
-// If any value is empty, alert the user with a specific message
-  if (userName.value.trim() === ""){
-    alert("Please enter your name / Merci de renseigner votre nom");
-    e.preventDefault();
-  } else if (email.value.trim() === ""){
-    alert("Please enter a valid email address / Merci de renseigner votre adresse courriel");
-    e.preventDefault();
-  } else if (text.value.trim() === ""){
-    alert("Please enter a short text / Merci de renseigner un court texte");
-    e.preventDefault();
-  } 
-  // Empty the value after submission
-  userName.value = "";
-  email.value = "";
-  text.value = "";
-    
-})

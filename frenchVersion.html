@@ -314,13 +314,14 @@
             name="contactUs"
           >
             <label class="sr-only" for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="Nom" />
+            <input type="text" id="name" name="name" placeholder="Nom" required/>
             <label class="sr-only" for="emailAddress">Adresse Email</label>
             <input
               type="email"
               id="emailAddress"
               name="emailAddress"
               placeholder="Adresse Email"
+              required
             />
             <label class="sr-only" for="feedback"
               >Laissez votre message ici</label
@@ -331,6 +332,7 @@
               placeholder="Laissez votre message ici"
               cols="45"
               rows="8"
+              required
             ></textarea>
             <button type="submit">Envoyer</button>
           </form>
