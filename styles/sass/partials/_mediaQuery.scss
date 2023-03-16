@@ -147,12 +147,13 @@ font-size: 1rem;
     }
     .emailAdress{
       left: 0;
-      top: 120px;
+      bottom: 60px;
     }
     .phoneNumber{
-      left: 50px;
-      top: 120px;
+      left: -50px;
+      bottom: 60px;
     }
+   
     button:hover,
     button:focus {
       transition: none;

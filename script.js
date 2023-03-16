@@ -25,27 +25,40 @@ header.addEventListener("click", function (event) {
 //2.Displaying phone number and email address when clicking on the related icon
 //Adding variables that I need
 const contactSection = document.querySelector(".contact");
-const emailIcon = document.querySelector(".fa-envelope");
-const phoneIcon = document.querySelector(".fa-phone-flip");
 const emailAdress = document.querySelector(".emailAdress");
 const phoneNumber = document.querySelector(".phoneNumber");
+//Defining x to allow double click on icon to hide/display
+let x = 0;
 
 //Adding an event listener on the contact section, targeting mail and phone icons
-
 contactSection.addEventListener("click", function (event) {
-  //If we click on mail, I display the mail and hide the phone
+  //If we click on mail, I display the mail and hide it if we re-click on it
   if (event.target.classList[1] === "fa-envelope") {
-    emailAdress.style.display = "block";
-    phoneNumber.style.display = "none";
-    //If we click on phone, I display the phone number and hide the mail
+    if (x===0) {
+      emailAdress.style.display = "block";
+      phoneNumber.style.display = "none";
+      x=1;
+    }
+    else {
+      emailAdress.style.display = "none";
+      x=0
+    }
+    //If we click on phone, I display the phone and hide it if we re-click on it
   } else if (event.target.classList[1] === "fa-phone-flip") {
-    phoneNumber.style.display = "block";
-    emailAdress.style.display = "none";
+    if (x===0) {
+      phoneNumber.style.display = "block";
+      emailAdress.style.display = "none";
+      x=1
+    } else {
+      phoneNumber.style.display = "none";
+      x=0
+    }
   }
-  //If we click anywhere else, we hide both
+  //If we click anywhere else, we hide both and reset x
   else {
     emailAdress.style.display = "none";
     phoneNumber.style.display = "none";
+    x=0
   }
 });
 

@@ -492,8 +492,8 @@ h3 span {
 }
 .projects li {
   margin-bottom: 50px;
-  width: calc(33.3333333333% - 20px);
-  min-width: 400px;
+  width: calc(33.3333333333% - 30px);
+  min-width: 350px;
   background-color: white;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -603,7 +603,6 @@ h3 span {
   background-image: url(../assets/felix-besombes-EzrHLVd83h0-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .flexContact {
@@ -640,11 +639,12 @@ h3 span {
   padding-right: 20px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  cursor: pointer;
 }
 .contactInfos i:hover,
 .contactInfos i:focus {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-text-stroke: 1px orange;
 }
 
@@ -685,21 +685,26 @@ form button:focus {
   border: 3px solid orange;
 }
 
+.mail {
+  position: relative;
+}
+
 .emailAdress {
-  color: white;
   position: absolute;
-  top: 155px;
-  left: 455px;
   display: none;
-  text-shadow: -1px 0px 10px black;
+  bottom: 50px;
+  left: -120px;
+}
+
+.phone {
+  position: relative;
 }
 
 .phoneNumber {
-  color: white;
-  position: absolute;
-  top: 155px;
-  left: 585px;
   display: none;
+  position: absolute;
+  bottom: 50px;
+  left: -75px;
 }
 
 footer {
@@ -928,11 +933,11 @@ footer {
   }
   .contact .emailAdress {
     left: 0;
-    top: 120px;
+    bottom: 60px;
   }
   .contact .phoneNumber {
-    left: 50px;
-    top: 120px;
+    left: -50px;
+    bottom: 60px;
   }
   .contact button:hover,
   .contact button:focus {

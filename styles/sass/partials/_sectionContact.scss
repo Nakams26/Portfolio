@@ -6,7 +6,6 @@
   background-image: url(../assets/felix-besombes-EzrHLVd83h0-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 .flexContact {
   display: flex;
@@ -32,10 +31,11 @@
     color: white;
     padding-right: 20px;
     transition: 0.7s;
+    cursor: pointer;
   }
   i:hover,
   i:focus {
-    transform: scale(1.5);
+    transform: scale(1.2);
     -webkit-text-stroke: 1px orange;
   }
 }
@@ -71,24 +71,24 @@ form {
   }
 }
 
-//Display/hide info on hover
-
-
-.emailAdress {
-  color: white;
-  position: absolute;
-  top: 155px;
-  left: 455px;
-  display: none;
-  text-shadow: -1px 0px 10px black;
+//Positioning mail and phone number when clicking on icons
+.mail {
+  position: relative;
 }
-
-.phoneNumber {
-  color: white;
+.emailAdress {
   position: absolute;
-  top: 155px;
-  left: 585px;
   display: none;
+  bottom: 50px;
+  left: -120px;
+}
+.phone {
+  position: relative;
+}
+.phoneNumber {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left: -75px;
 }
 
 // ---------------Contact Section styling start here ---------------//
