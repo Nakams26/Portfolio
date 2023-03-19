@@ -46,7 +46,7 @@ contactSection.addEventListener("click", function (event) {
     //If we click on phone, I display the phone and hide it if we re-click on it
   } else if (event.target.classList[1] === "fa-phone-flip") {
     if (x===0) {
-      phoneNumber.style.display = "block";
+      phoneNumber.style.display = "flex";
       emailAdress.style.display = "none";
       x=1
     } else {
