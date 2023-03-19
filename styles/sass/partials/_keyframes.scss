@@ -1,4 +1,3 @@
-
 //---------------------Start of header animation-----------------//
 // Jump animation for arrow
 
@@ -15,46 +14,44 @@
 }
 //---------------------End of header animation-----------------//
 
-
- //---------------------Start of skills section animation-----------------//
+//---------------------Start of skills section animation-----------------//
 // shake animation for skills
 @keyframes shake {
-    0%, 7% {
-      transform: rotateZ(0);
-    }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+// Burger menu animation
+
+@keyframes dropDown {
+  0% {
+    transform: translateX(-100%);
   }
 
-  // Burger menu animation
+  100% {
+    transform: translateX(0);
+  }
+}
 
-  @keyframes dropDown {
-   
-      0% {
-        transform: translateX(-100%);
-      }
-      
-      100% {
-        transform: translateX(0);
-      }
-    }
-  
- //---------------------End of skills section animation-----------------//
-
-  
+//---------------------End of skills section animation-----------------//

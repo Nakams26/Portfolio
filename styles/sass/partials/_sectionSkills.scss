@@ -1,36 +1,36 @@
 @use "./variables" as *;
 
-
 // ---------------Skills Section styling start here ---------------//
-.skills{
+.skills {
   background-color: $fourthColor;
-  h2{
+  h2 {
     color: orange;
   }
 }
 // Display every icons side by side
-.ulSkills{
+.ulSkills {
   display: flex;
   flex-wrap: wrap;
-justify-content: space-around;
-     li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       p{
-        padding: 50px;
-        color: white;
-       }
-     }
-
-    i{
+  justify-content: space-around;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding: 50px;
       color: white;
-      transition: 0.7s;
-       font-size: 3rem;
     }
-   
-    li:hover, li:focus{
-      animation: shake 1s ease infinite;
+  }
+
+  i {
+    color: white;
+    transition: 0.7s;
+    font-size: 3rem;
+  }
+
+  li:hover,
+  li:focus {
+    animation: shake 1s ease infinite;
   }
 }
 

@@ -43,9 +43,9 @@
         padding: 5px;
       }
       li:hover,
-  li:focus {
-    transform: none;
-  }
+      li:focus {
+        transform: none;
+      }
     }
   }
   .frenchNav {
@@ -54,16 +54,15 @@
     top: 0;
     left: 10px;
     animation: dropDown 0.9s ease 1;
-    ul{
-        li{
-            padding: 5px;
-            text-align: center;
-            a{
-                font-size: 0.65rem;
-            }
+    ul {
+      li {
+        padding: 5px;
+        text-align: center;
+        a {
+          font-size: 0.65rem;
         }
+      }
     }
-
   }
   .openMenu {
     display: block;
@@ -85,13 +84,13 @@
       p {
         text-align: center;
       }
-    .languages {
-font-size: 1rem;
-    }
+      .languages {
+        font-size: 1rem;
+      }
     }
   }
   //Language icon
-  .languageIcon{
+  .languageIcon {
     top: 50px;
     right: 13px;
   }
@@ -110,7 +109,7 @@ font-size: 1rem;
       width: 40%;
     }
   }
-  .frenchSkills{
+  .frenchSkills {
     font-size: 2rem;
   }
   //Project section
@@ -120,21 +119,22 @@ font-size: 1rem;
     li {
       min-width: 100%;
     }
-    li:hover, li:focus{
+    li:hover,
+    li:focus {
       transform: none;
     }
   }
   .projectLink:hover,
-.projectLink:focus {
-  transform: none;
-}
+  .projectLink:focus {
+    transform: none;
+  }
 
   //Contact Section
 
   .contact {
     padding-top: 0;
-    .flexContact{
-      p{
+    .flexContact {
+      p {
         padding: 0;
       }
     }
@@ -145,15 +145,15 @@ font-size: 1rem;
         text-align: center;
       }
     }
-    .emailAdress{
+    .emailAdress {
       left: 0;
       bottom: 60px;
     }
-    .phoneNumber{
+    .phoneNumber {
       left: -50px;
       bottom: 60px;
     }
-   
+
     button:hover,
     button:focus {
       transition: none;
