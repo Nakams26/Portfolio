@@ -40,7 +40,6 @@ a {
   font-size: 0.9rem;
 }
 
-
 p,
 input,
 label,
@@ -50,6 +49,39 @@ button {
   font-size: 1.2rem;
 }
 
-section{
+section {
   padding: 100px 0;
+}
+
+.hiddenLeft {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.showLeft {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.flexLi:nth-child(2) {
+  transition-delay: 500ms;
+}
+.flexLi:nth-child(3) {
+  transition-delay: 1000ms;
+}
+
+.hiddenRight {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(70%);
+  filter: blur(5px);
+}
+
+.showRight {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

@@ -84,11 +84,15 @@
       p {
         text-align: center;
       }
+      .titleEn, .titleFr {
+        font-size: 1.1rem;
+      }
       .languages {
         font-size: 1rem;
       }
     }
   }
+
   //Language icon
   .languageIcon {
     top: 50px;

@@ -8,7 +8,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
   position: relative;
 }
 // Using flex to center every element
@@ -34,8 +34,18 @@ header {
     font-size: 1.4rem;
     margin-bottom: 180px;
     margin-top: 15px;
-    text-align: center;
+     text-align: center;
   }
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriterFr::before {
+  content: "";
+  animation: typingFr 13.5s infinite;
 }
 
 //   Styling link button

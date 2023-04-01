@@ -34,44 +34,67 @@ let x = 0;
 contactSection.addEventListener("click", function (event) {
   //If we click on mail, I display the mail and hide it if we re-click on it
   if (event.target.classList[1] === "fa-envelope") {
-    if (x===0) {
+    if (x === 0) {
       emailAdress.style.display = "block";
       phoneNumber.style.display = "none";
-      x=1;
-    }
-    else {
+      x = 1;
+    } else {
       emailAdress.style.display = "none";
-      x=0
+      x = 0;
     }
     //If we click on phone, I display the phone and hide it if we re-click on it
   } else if (event.target.classList[1] === "fa-phone-flip") {
-    if (x===0) {
+    if (x === 0) {
       phoneNumber.style.display = "flex";
       emailAdress.style.display = "none";
-      x=1
+      x = 1;
     } else {
       phoneNumber.style.display = "none";
-      x=0
+      x = 0;
     }
   }
   //If we click anywhere else, we hide both and reset x
   else {
     emailAdress.style.display = "none";
     phoneNumber.style.display = "none";
-    x=0
+    x = 0;
   }
 });
-
 
 //3.Clearing a form after a submission
 
 window.onbeforeunload = () => {
-  for(const form of document.getElementsByTagName('form')) {
+  for (const form of document.getElementsByTagName("form")) {
     form.reset();
   }
-}
+};
 
+//4.Onscroll effect
 
+//Coming from left
+const observerLeft = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showLeft");
+    } else {
+      entry.target.classList.remove("showLeft");
+    }
+  });
+});
 
+const hiddenElementLeft = document.querySelectorAll(".hiddenLeft");
+hiddenElementLeft.forEach((el) => observerLeft.observe(el));
 
+//Coming from right
+const observerRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showRight");
+    } else {
+      entry.target.classList.remove("showRight");
+    }
+  });
+});
 
+const hiddenElement = document.querySelectorAll(".hiddenRight");
+hiddenElement.forEach((el) => observerRight.observe(el));

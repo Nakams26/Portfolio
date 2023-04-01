@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -282,6 +283,52 @@ section {
   padding: 100px 0;
 }
 
+.hiddenLeft {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.showLeft {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.flexLi:nth-child(2) {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.flexLi:nth-child(3) {
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+.hiddenRight {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.showRight {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 nav {
   width: 50%;
   margin: 30px 0;
@@ -322,7 +369,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
   position: relative;
 }
 
@@ -358,6 +405,18 @@ header {
   margin-bottom: 180px;
   margin-top: 15px;
   text-align: center;
+}
+
+.typewriter::before {
+  content: "";
+  -webkit-animation: typing 13.5s infinite;
+          animation: typing 13.5s infinite;
+}
+
+.typewriterFr::before {
+  content: "";
+  -webkit-animation: typingFr 13.5s infinite;
+          animation: typingFr 13.5s infinite;
 }
 
 .link {
@@ -502,11 +561,6 @@ h3 span {
 }
 .projects li p {
   text-align: center;
-}
-.projects li:hover,
-.projects li:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .flexLi {
@@ -821,6 +875,326 @@ footer {
             transform: translateX(0);
   }
 }
+@-webkit-keyframes typing {
+  0%, 40% {
+    content: "";
+  }
+  1%, 39% {
+    content: "b";
+  }
+  2%, 38% {
+    content: "ba";
+  }
+  3%, 37% {
+    content: "bas";
+  }
+  4%, 36% {
+    content: "based";
+  }
+  5%, 35% {
+    content: "based i";
+  }
+  6%, 34% {
+    content: "based in";
+  }
+  7%, 33% {
+    content: "based in T";
+  }
+  9%, 32% {
+    content: "based in To";
+  }
+  10%, 31% {
+    content: "based in Tor";
+  }
+  11%, 30% {
+    content: "based in Toro";
+  }
+  12%, 29% {
+    content: "based in Toron";
+  }
+  13%, 28% {
+    content: "based in Toront";
+  }
+  14%, 27% {
+    content: "based in Toronto";
+  }
+  15%, 26% {
+    content: "based in Toronto 🇨🇦";
+  }
+  45%, 85% {
+    content: "";
+  }
+  46%, 84% {
+    content: "f";
+  }
+  47%, 83% {
+    content: "fr";
+  }
+  48%, 82% {
+    content: "fro ";
+  }
+  49%, 81% {
+    content: "from V";
+  }
+  50%, 80% {
+    content: "from Va";
+  }
+  51%, 79% {
+    content: "from Val";
+  }
+  52%, 78% {
+    content: "from Vale";
+  }
+  53%, 77% {
+    content: "from Valen";
+  }
+  54%, 76% {
+    content: "from Valenc";
+  }
+  55%, 75% {
+    content: "from Valence";
+  }
+  56%, 74% {
+    content: "from Valence 🇫🇷";
+  }
+}
+@keyframes typing {
+  0%, 40% {
+    content: "";
+  }
+  1%, 39% {
+    content: "b";
+  }
+  2%, 38% {
+    content: "ba";
+  }
+  3%, 37% {
+    content: "bas";
+  }
+  4%, 36% {
+    content: "based";
+  }
+  5%, 35% {
+    content: "based i";
+  }
+  6%, 34% {
+    content: "based in";
+  }
+  7%, 33% {
+    content: "based in T";
+  }
+  9%, 32% {
+    content: "based in To";
+  }
+  10%, 31% {
+    content: "based in Tor";
+  }
+  11%, 30% {
+    content: "based in Toro";
+  }
+  12%, 29% {
+    content: "based in Toron";
+  }
+  13%, 28% {
+    content: "based in Toront";
+  }
+  14%, 27% {
+    content: "based in Toronto";
+  }
+  15%, 26% {
+    content: "based in Toronto 🇨🇦";
+  }
+  45%, 85% {
+    content: "";
+  }
+  46%, 84% {
+    content: "f";
+  }
+  47%, 83% {
+    content: "fr";
+  }
+  48%, 82% {
+    content: "fro ";
+  }
+  49%, 81% {
+    content: "from V";
+  }
+  50%, 80% {
+    content: "from Va";
+  }
+  51%, 79% {
+    content: "from Val";
+  }
+  52%, 78% {
+    content: "from Vale";
+  }
+  53%, 77% {
+    content: "from Valen";
+  }
+  54%, 76% {
+    content: "from Valenc";
+  }
+  55%, 75% {
+    content: "from Valence";
+  }
+  56%, 74% {
+    content: "from Valence 🇫🇷";
+  }
+}
+@-webkit-keyframes typingFr {
+  0%, 40% {
+    content: "";
+  }
+  1%, 39% {
+    content: "b";
+  }
+  2%, 38% {
+    content: "ba";
+  }
+  3%, 37% {
+    content: "bas";
+  }
+  4%, 36% {
+    content: "basé";
+  }
+  5%, 35% {
+    content: "basé à";
+  }
+  6%, 34% {
+    content: "basé à T";
+  }
+  7%, 33% {
+    content: "basé à To";
+  }
+  9%, 32% {
+    content: "basé à Tor";
+  }
+  10%, 31% {
+    content: "basé à Toro";
+  }
+  11%, 30% {
+    content: "basé à Toron";
+  }
+  12%, 29% {
+    content: "basé à Toront";
+  }
+  13%, 28% {
+    content: "basé à Toronto";
+  }
+  14%, 27% {
+    content: "basé à Toronto 🇨🇦";
+  }
+  45%, 85% {
+    content: "";
+  }
+  46%, 84% {
+    content: "d";
+  }
+  47%, 83% {
+    content: "de ";
+  }
+  48%, 82% {
+    content: "de V ";
+  }
+  49%, 81% {
+    content: "de Va";
+  }
+  50%, 80% {
+    content: "de Val";
+  }
+  51%, 79% {
+    content: "de Vale";
+  }
+  52%, 78% {
+    content: "de Valen";
+  }
+  53%, 77% {
+    content: "de Valenc";
+  }
+  54%, 76% {
+    content: "de Valence";
+  }
+  55%, 75% {
+    content: "de Valence 🇫🇷";
+  }
+}
+@keyframes typingFr {
+  0%, 40% {
+    content: "";
+  }
+  1%, 39% {
+    content: "b";
+  }
+  2%, 38% {
+    content: "ba";
+  }
+  3%, 37% {
+    content: "bas";
+  }
+  4%, 36% {
+    content: "basé";
+  }
+  5%, 35% {
+    content: "basé à";
+  }
+  6%, 34% {
+    content: "basé à T";
+  }
+  7%, 33% {
+    content: "basé à To";
+  }
+  9%, 32% {
+    content: "basé à Tor";
+  }
+  10%, 31% {
+    content: "basé à Toro";
+  }
+  11%, 30% {
+    content: "basé à Toron";
+  }
+  12%, 29% {
+    content: "basé à Toront";
+  }
+  13%, 28% {
+    content: "basé à Toronto";
+  }
+  14%, 27% {
+    content: "basé à Toronto 🇨🇦";
+  }
+  45%, 85% {
+    content: "";
+  }
+  46%, 84% {
+    content: "d";
+  }
+  47%, 83% {
+    content: "de ";
+  }
+  48%, 82% {
+    content: "de V ";
+  }
+  49%, 81% {
+    content: "de Va";
+  }
+  50%, 80% {
+    content: "de Val";
+  }
+  51%, 79% {
+    content: "de Vale";
+  }
+  52%, 78% {
+    content: "de Valen";
+  }
+  53%, 77% {
+    content: "de Valenc";
+  }
+  54%, 76% {
+    content: "de Valence";
+  }
+  55%, 75% {
+    content: "de Valence 🇫🇷";
+  }
+}
 @media (max-width: 1250px) {
   nav ul li a {
     font-size: 1rem;
@@ -881,6 +1255,9 @@ footer {
   }
   header .flexHeader p {
     text-align: center;
+  }
+  header .flexHeader .titleEn, header .flexHeader .titleFr {
+    font-size: 1.1rem;
   }
   header .flexHeader .languages {
     font-size: 1rem;
