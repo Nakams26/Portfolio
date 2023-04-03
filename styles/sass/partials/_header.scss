@@ -56,10 +56,12 @@ header {
   display: flex;
   transition: 0.7s;
   border: 2px solid white;
+  border-radius: 5px;
   color: white;
   background-color: black;
   a {
     font-weight: 400;
+
   }
 }
 .link:hover,

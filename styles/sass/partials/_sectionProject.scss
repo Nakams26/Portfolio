@@ -29,6 +29,10 @@
     background-color: white;
     transition: 0.7s;
      position: relative;
+     border-radius: 5px;
+     img{
+      border-radius: 5px;
+     }
     p {
       text-align: center;
     }
@@ -61,6 +65,7 @@
   border: 2px solid $secondaryColor;
   transition: 0.3s;
   overflow: hidden;
+  border-radius: 5px;
   a {
     color: white;
   }
@@ -85,6 +90,7 @@
   opacity: 0;
   transition: .5s ease;
   background-color: white;
+  border-radius: 5px;
 }
 
 .container:hover .overlay {
