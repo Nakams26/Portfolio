@@ -1241,7 +1241,7 @@ footer {
             animation: dropDown 0.9s ease 1;
   }
   nav ul li {
-    padding: 5px;
+    padding: 10px;
   }
   nav ul li:hover,
   nav ul li:focus {
@@ -1257,7 +1257,7 @@ footer {
             animation: dropDown 0.9s ease 1;
   }
   .frenchNav ul li {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
   }
   .frenchNav ul li a {
@@ -1289,7 +1289,7 @@ footer {
     font-size: 1rem;
   }
   .languageIcon {
-    top: 50px;
+    top: 70px;
     right: 13px;
   }
   .about {
