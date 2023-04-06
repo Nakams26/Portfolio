@@ -315,8 +315,8 @@ section {
   opacity: 0;
   -webkit-transition: all 2s;
   transition: all 2s;
-  -webkit-transform: translateX(300%);
-          transform: translateX(300%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
