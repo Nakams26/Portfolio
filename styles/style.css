@@ -409,14 +409,14 @@ header {
 
 .typewriter::before {
   content: "";
-  -webkit-animation: typing 13.5s infinite;
-          animation: typing 13.5s infinite;
+  -webkit-animation: typing 10s infinite;
+          animation: typing 10s infinite;
 }
 
 .typewriterFr::before {
   content: "";
-  -webkit-animation: typingFr 13.5s infinite;
-          animation: typingFr 13.5s infinite;
+  -webkit-animation: typingFr 10s infinite;
+          animation: typingFr 10s infinite;
 }
 
 .link {
@@ -918,33 +918,42 @@ footer {
     content: "based";
   }
   5%, 35% {
-    content: "based i";
+    content: "based ";
   }
   6%, 34% {
-    content: "based in";
+    content: "based i";
   }
   7%, 33% {
-    content: "based in T";
+    content: "based in";
   }
   9%, 32% {
-    content: "based in To";
+    content: "based in ";
   }
   10%, 31% {
-    content: "based in Tor";
+    content: "based in T";
   }
   11%, 30% {
-    content: "based in Toro";
+    content: "based in To";
   }
   12%, 29% {
-    content: "based in Toron";
+    content: "based in Tor";
   }
   13%, 28% {
-    content: "based in Toront";
+    content: "based in Toro";
   }
   14%, 27% {
-    content: "based in Toronto";
+    content: "based in Toron";
   }
   15%, 26% {
+    content: "based in Toront";
+  }
+  16%, 25% {
+    content: "based in Toronto";
+  }
+  17%, 24% {
+    content: "based in Toronto ";
+  }
+  18%, 23% {
     content: "based in Toronto 🇨🇦";
   }
   45%, 85% {
@@ -960,27 +969,36 @@ footer {
     content: "fro ";
   }
   49%, 81% {
-    content: "from V";
+    content: "from";
   }
   50%, 80% {
-    content: "from Va";
+    content: "from ";
   }
   51%, 79% {
-    content: "from Val";
+    content: "from V";
   }
   52%, 78% {
-    content: "from Vale";
+    content: "from Va";
   }
   53%, 77% {
-    content: "from Valen";
+    content: "from Val";
   }
   54%, 76% {
-    content: "from Valenc";
+    content: "from Vale";
   }
   55%, 75% {
-    content: "from Valence";
+    content: "from Valen";
   }
   56%, 74% {
+    content: "from Valenc";
+  }
+  57%, 73% {
+    content: "from Valence";
+  }
+  58%, 72% {
+    content: "from Valence ";
+  }
+  59%, 71% {
     content: "from Valence 🇫🇷";
   }
 }
@@ -1001,33 +1019,42 @@ footer {
     content: "based";
   }
   5%, 35% {
-    content: "based i";
+    content: "based ";
   }
   6%, 34% {
-    content: "based in";
+    content: "based i";
   }
   7%, 33% {
-    content: "based in T";
+    content: "based in";
   }
   9%, 32% {
-    content: "based in To";
+    content: "based in ";
   }
   10%, 31% {
-    content: "based in Tor";
+    content: "based in T";
   }
   11%, 30% {
-    content: "based in Toro";
+    content: "based in To";
   }
   12%, 29% {
-    content: "based in Toron";
+    content: "based in Tor";
   }
   13%, 28% {
-    content: "based in Toront";
+    content: "based in Toro";
   }
   14%, 27% {
-    content: "based in Toronto";
+    content: "based in Toron";
   }
   15%, 26% {
+    content: "based in Toront";
+  }
+  16%, 25% {
+    content: "based in Toronto";
+  }
+  17%, 24% {
+    content: "based in Toronto ";
+  }
+  18%, 23% {
     content: "based in Toronto 🇨🇦";
   }
   45%, 85% {
@@ -1043,27 +1070,36 @@ footer {
     content: "fro ";
   }
   49%, 81% {
-    content: "from V";
+    content: "from";
   }
   50%, 80% {
-    content: "from Va";
+    content: "from ";
   }
   51%, 79% {
-    content: "from Val";
+    content: "from V";
   }
   52%, 78% {
-    content: "from Vale";
+    content: "from Va";
   }
   53%, 77% {
-    content: "from Valen";
+    content: "from Val";
   }
   54%, 76% {
-    content: "from Valenc";
+    content: "from Vale";
   }
   55%, 75% {
-    content: "from Valence";
+    content: "from Valen";
   }
   56%, 74% {
+    content: "from Valenc";
+  }
+  57%, 73% {
+    content: "from Valence";
+  }
+  58%, 72% {
+    content: "from Valence ";
+  }
+  59%, 71% {
     content: "from Valence 🇫🇷";
   }
 }
@@ -1084,30 +1120,39 @@ footer {
     content: "basé";
   }
   5%, 35% {
-    content: "basé à";
+    content: "basé ";
   }
   6%, 34% {
-    content: "basé à T";
+    content: "basé à";
   }
   7%, 33% {
-    content: "basé à To";
+    content: "basé à ";
   }
   9%, 32% {
-    content: "basé à Tor";
+    content: "basé à T";
   }
   10%, 31% {
-    content: "basé à Toro";
+    content: "basé à To";
   }
   11%, 30% {
-    content: "basé à Toron";
+    content: "basé à Tor";
   }
   12%, 29% {
-    content: "basé à Toront";
+    content: "basé à Toro";
   }
   13%, 28% {
-    content: "basé à Toronto";
+    content: "basé à Toron";
   }
   14%, 27% {
+    content: "basé à Toront";
+  }
+  15%, 26% {
+    content: "basé à Toronto";
+  }
+  16%, 25% {
+    content: "basé à Toronto ";
+  }
+  17%, 24% {
     content: "basé à Toronto 🇨🇦";
   }
   45%, 85% {
@@ -1117,31 +1162,37 @@ footer {
     content: "d";
   }
   47%, 83% {
-    content: "de ";
+    content: "de";
   }
   48%, 82% {
-    content: "de V ";
+    content: "de ";
   }
   49%, 81% {
-    content: "de Va";
+    content: "de V";
   }
   50%, 80% {
-    content: "de Val";
+    content: "de Va";
   }
   51%, 79% {
-    content: "de Vale";
+    content: "de Val";
   }
   52%, 78% {
-    content: "de Valen";
+    content: "de Vale";
   }
   53%, 77% {
-    content: "de Valenc";
+    content: "de Valen";
   }
   54%, 76% {
-    content: "de Valence";
+    content: "de Valenc";
   }
   55%, 75% {
-    content: "de Valence 🇫🇷";
+    content: "de Valence";
+  }
+  56%, 74% {
+    content: "de Valence ";
+  }
+  57%, 73% {
+    content: "dde Valence 🇫🇷";
   }
 }
 @keyframes typingFr {
@@ -1161,30 +1212,39 @@ footer {
     content: "basé";
   }
   5%, 35% {
-    content: "basé à";
+    content: "basé ";
   }
   6%, 34% {
-    content: "basé à T";
+    content: "basé à";
   }
   7%, 33% {
-    content: "basé à To";
+    content: "basé à ";
   }
   9%, 32% {
-    content: "basé à Tor";
+    content: "basé à T";
   }
   10%, 31% {
-    content: "basé à Toro";
+    content: "basé à To";
   }
   11%, 30% {
-    content: "basé à Toron";
+    content: "basé à Tor";
   }
   12%, 29% {
-    content: "basé à Toront";
+    content: "basé à Toro";
   }
   13%, 28% {
-    content: "basé à Toronto";
+    content: "basé à Toron";
   }
   14%, 27% {
+    content: "basé à Toront";
+  }
+  15%, 26% {
+    content: "basé à Toronto";
+  }
+  16%, 25% {
+    content: "basé à Toronto ";
+  }
+  17%, 24% {
     content: "basé à Toronto 🇨🇦";
   }
   45%, 85% {
@@ -1194,31 +1254,37 @@ footer {
     content: "d";
   }
   47%, 83% {
-    content: "de ";
+    content: "de";
   }
   48%, 82% {
-    content: "de V ";
+    content: "de ";
   }
   49%, 81% {
-    content: "de Va";
+    content: "de V";
   }
   50%, 80% {
-    content: "de Val";
+    content: "de Va";
   }
   51%, 79% {
-    content: "de Vale";
+    content: "de Val";
   }
   52%, 78% {
-    content: "de Valen";
+    content: "de Vale";
   }
   53%, 77% {
-    content: "de Valenc";
+    content: "de Valen";
   }
   54%, 76% {
-    content: "de Valence";
+    content: "de Valenc";
   }
   55%, 75% {
-    content: "de Valence 🇫🇷";
+    content: "de Valence";
+  }
+  56%, 74% {
+    content: "de Valence ";
+  }
+  57%, 73% {
+    content: "dde Valence 🇫🇷";
   }
 }
 @media (max-width: 1250px) {

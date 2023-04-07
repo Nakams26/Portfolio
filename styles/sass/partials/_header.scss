@@ -40,12 +40,12 @@ header {
 
 .typewriter::before {
   content: "";
-  animation: typing 13.5s infinite;
+  animation: typing 10s infinite;
 }
 
 .typewriterFr::before {
   content: "";
-  animation: typingFr 13.5s infinite;
+  animation: typingFr 10s infinite;
 }
 
 //   Styling link button
